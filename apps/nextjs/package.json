@@ -1,0 +1,24 @@
+{
+    "name": "@tsparticles/nextjs-demo",
+    "version": "0.9.1",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "build:ci": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@tsparticles/react": "^2.7.1",
+        "next": "^13.1.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "tsparticles-preset-big-circles": "^2.7.1",
+        "typescript": "^4.9.4"
+    },
+    "devDependencies": {
+        "eslint": "^8.30.0",
+        "eslint-config-next": "^13.1.0"
+    }
+}
