@@ -1,5 +1,5 @@
 {
-  "name": "@tsparticles/inferno-workspace",
+  "name": "@tsparticles/react-workspace",
   "version": "0.0.0",
   "private": true,
   "scripts": {
