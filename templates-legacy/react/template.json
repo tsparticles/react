@@ -1,7 +1,7 @@
 {
   "package": {
     "dependencies": {
-      "react-particles": "^2.7.1",
+      "@tsparticles/react": "^2.7.1",
       "tsparticles-engine": "^2.7.1",
       "tsparticles": "^2.7.1",
       "tslib": "^2.4.0"

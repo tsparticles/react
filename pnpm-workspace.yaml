@@ -1,6 +1,5 @@
 packages:
   - 'apps/*'
   - 'components/*'
-  - 'components-legacy/*'
   - 'templates/*'
   - 'templates-legacy/*'
