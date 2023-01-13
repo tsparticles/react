@@ -3,9 +3,7 @@
   "packages": [
     "apps/*",
     "components/*",
-    "components-legacy/*",
     "templates/*",
-    "templates-legacy/*"
   ],
   "useWorkspaces": true,
   "version": "2.7.1",
