@@ -1,8 +1,8 @@
 [![banner](https://particles.js.org/images/banner3.png)](https://particles.js.org)
 
-# @tsparticles/react
+# react-particles
 
-[![npm](https://img.shields.io/npm/v/@tsparticles/react)](https://www.npmjs.com/package/@tsparticles/react) [![npm](https://img.shields.io/npm/dm/@tsparticles/react)](https://www.npmjs.com/package/@tsparticles/react)
+[![npm](https://img.shields.io/npm/v/react-particles)](https://www.npmjs.com/package/react-particles) [![npm](https://img.shields.io/npm/dm/react-particles)](https://www.npmjs.com/package/react-particles)
 
 Албан ёсны [tsParticles](https://github.com/matteobruni/tsparticles) ReactJS компонэнт
 
@@ -13,13 +13,13 @@
 ## Татах
 
 ```shell
-npm install @tsparticles/react react
+npm install react-particles react
 ```
 
 эсвэл
 
 ```shell
-yarn add @tsparticles/react react
+yarn add react-particles react
 ```
 
 #### create-react-app
@@ -50,7 +50,7 @@ create-react-app your_app --template particles-typescript
 _Remote url_
 
 ```javascript
-import Particles from "@tsparticles/react";
+import Particles from "react-particles";
 
 const App = () => {
     const particlesInit = main => {
@@ -71,7 +71,7 @@ const App = () => {
 _Options object_
 
 ```javascript
-import Particles from "@tsparticles/react";
+import Particles from "react-particles";
 
 const App = () => {
     const particlesInit = main => {

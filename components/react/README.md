@@ -1,8 +1,8 @@
 [![banner](https://particles.js.org/images/banner3.png)](https://particles.js.org)
 
-# @tsparticles/react
+# react-particles
 
-[![npm](https://img.shields.io/npm/v/@tsparticles/react)](https://www.npmjs.com/package/@tsparticles/react) [![npm](https://img.shields.io/npm/dm/@tsparticles/react)](https://www.npmjs.com/package/@tsparticles/react) [![GitHub Sponsors](https://img.shields.io/github/sponsors/matteobruni)](https://github.com/sponsors/matteobruni)
+[![npm](https://img.shields.io/npm/v/react-particles)](https://www.npmjs.com/package/react-particles) [![npm](https://img.shields.io/npm/dm/react-particles)](https://www.npmjs.com/package/react-particles) [![GitHub Sponsors](https://img.shields.io/github/sponsors/matteobruni)](https://github.com/sponsors/matteobruni)
 
 Official [tsParticles](https://github.com/matteobruni/tsparticles) ReactJS component
 
@@ -13,13 +13,13 @@ Official [tsParticles](https://github.com/matteobruni/tsparticles) ReactJS compo
 ## Installation
 
 ```shell
-npm install @tsparticles/react
+npm install react-particles
 ```
 
 or
 
 ```shell
-yarn add @tsparticles/react
+yarn add react-particles
 ```
 
 ### create-react-app
@@ -53,7 +53,7 @@ Examples:
 
 ```jsx
 import { useCallback } from "react";
-import Particles from "@tsparticles/react";
+import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
 const App = () => {
@@ -79,7 +79,7 @@ const App = () => {
 
 ```typescript jsx
 import { useCallback } from "react";
-import Particles from "@tsparticles/react";
+import Particles from "react-particles";
 import type { Container, Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
 
@@ -109,7 +109,7 @@ const App = () => {
 
 ```jsx
 import { useCallback } from "react";
-import Particles from "@tsparticles/react";
+import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
 const App = () => {
@@ -212,7 +212,7 @@ const App = () => {
 ```typescript jsx
 import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
-import Particles from "@tsparticles/react";
+import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
 const App = () => {

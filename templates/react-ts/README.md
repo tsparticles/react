@@ -1,6 +1,6 @@
 [![banner](https://particles.js.org/images/banner3.png)](https://particles.js.org)
 
-# @tsparticles/cra-template-typescript
+# cra-template-particles-typescript
 
 This is the official TypeScript template for [React tsParticles](https://github.com/matteobruni/tsparticles) with [Create React App](https://github.com/facebook/create-react-app).
 

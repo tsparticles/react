@@ -1,8 +1,8 @@
 [![banner](https://particles.js.org/images/banner3.png)](https://particles.js.org)
 
-# @tsparticles/react
+# react-particles
 
-[![npm](https://img.shields.io/npm/v/@tsparticles/react)](https://www.npmjs.com/package/@tsparticles/react) [![npm](https://img.shields.io/npm/dm/@tsparticles/react)](https://www.npmjs.com/package/@tsparticles/react)
+[![npm](https://img.shields.io/npm/v/react-particles)](https://www.npmjs.com/package/react-particles) [![npm](https://img.shields.io/npm/dm/react-particles)](https://www.npmjs.com/package/react-particles)
 
 Offizieller[tsParticles](https://github.com/matteobruni/tsparticles) ReactJS-Komponent
 
@@ -14,7 +14,7 @@ Offizieller[tsParticles](https://github.com/matteobruni/tsparticles) ReactJS-Kom
 
 ```shell
 
-npm install @tsparticles/react
+npm install react-particles
 
 ```
 
@@ -22,7 +22,7 @@ oder
 
 ```shell
 
-yarn add @tsparticles/react
+yarn add react-particles
 
 ```
 
@@ -57,7 +57,7 @@ create-react-app your_app --template particles-typescript
 Beispiel:
 
 ```javascript
-import Particles from "@tsparticles/react";
+import Particles from "react-particles";
 
 const App = () => {
     const particlesInit = main => {

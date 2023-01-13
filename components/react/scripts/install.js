@@ -1,5 +1,5 @@
 const path = require('path');
-const reactParticlesJsFoundError = "@tsparticles/react-js-found";
+const reactParticlesJsFoundError = "react-particles-js-found";
 
 if (!process.env.INIT_CWD) {
     return;
@@ -24,8 +24,8 @@ try {
         return;
     }
 
-    if (dependencies["@tsparticles/react-js"]) {
-        console.error("\x1b[31m%s\x1b[0m", "The package @tsparticles/react-js has been deprecated, is not supported anymore, and can cause issues with @tsparticles/react package. Please consider removing the deprecated dependency.");
+    if (dependencies["react-particles-js"]) {
+        console.error("\x1b[31m%s\x1b[0m", "The package react-particles-js has been deprecated, is not supported anymore, and can cause issues with react-particles package. Please consider removing the deprecated dependency.");
 
         throw new Error(reactParticlesJsFoundError);
     }

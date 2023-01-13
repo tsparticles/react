@@ -1,5 +1,5 @@
 {
-    "name": "@tsparticles/react",
+    "name": "react-particles",
     "version": "2.7.1",
     "description": "Official tsParticles React Component - Easily create highly customizable particle, confetti and fireworks animations and use them as animated backgrounds for your website. Ready to use components available also for Web Components, Vue.js (2.x and 3.x), Angular, Svelte, jQuery, Preact, Riot.js, Solid.js, Inferno.",
     "scripts": {
@@ -44,9 +44,9 @@
         "particles-bg-vue",
         "particles-ts",
         "particles.ts",
-        "@tsparticles/react-js",
-        "@tsparticles/react.js",
-        "@tsparticles/react",
+        "react-particles-js",
+        "react-particles.js",
+        "react-particles",
         "react",
         "reactjs",
         "vue-particles",

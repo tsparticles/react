@@ -1,6 +1,6 @@
 [![banner](https://particles.js.org/images/banner3.png)](https://particles.js.org)
 
-# @tsparticles/cra-template
+# cra-template-particles
 
 This is the official template for [React tsParticles](https://github.com/matteobruni/tsparticles) [Create React App](https://github.com/facebook/create-react-app).
 
