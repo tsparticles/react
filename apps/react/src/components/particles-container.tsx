@@ -1,10 +1,10 @@
 import * as React from 'react';
 import Particles from '@tsparticles/react';
-import type { Container, Engine, IOptions, RecursivePartial } from "tsparticles-engine";
+import type { Container, Engine, ISourceOptions } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
 
 interface IProps {
-    options: RecursivePartial<IOptions>;
+    options: ISourceOptions;
 }
 
 export class ParticlesContainer extends React.PureComponent<IProps> {
