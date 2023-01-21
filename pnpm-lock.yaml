@@ -43,7 +43,7 @@ importers:
 
   apps/nextjs-beta:
     specifiers:
-      '@next/font': 13.1.2
+      '@next/font': 13.1.4
       '@tsparticles/react': ^2.8.0
       '@types/node': ^18.11.17
       '@types/react': ^18.0.26
@@ -58,7 +58,7 @@ importers:
       tsparticles-engine: ^2.8.0
       typescript: 4.9.4
     dependencies:
-      '@next/font': 13.1.2
+      '@next/font': 13.1.4
       '@tsparticles/react': link:../../components/react/dist
       '@types/node': 18.11.18
       '@types/react': 18.0.26
@@ -2596,8 +2596,8 @@ packages:
     dependencies:
       glob: 7.1.7
 
-  /@next/font/13.1.2:
-    resolution: {integrity: sha512-NXGXGFGiOKEnvBIHq9cdFTKbHO2/4B3Zd9K27M7j1DioIQVar7oVRqZMYs0h3XMVEZLwjjkdAtqRPCzzd3RtXg==}
+  /@next/font/13.1.4:
+    resolution: {integrity: sha512-NfqQPAIFJhssdaZEsP0MADZKN+tc040jOkNKVlDZHtVjJWBJSgbe8UHg3w0S6YuQr7PHc0ACbFeVCBQeG4MEvg==}
     dev: false
 
   /@next/swc-android-arm-eabi/13.1.1:
