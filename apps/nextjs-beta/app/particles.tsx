@@ -11,5 +11,5 @@ export default function ParticlesComponent(props: { id: string }) {
         await loadFull(engine);
     }, []);
 
-    return <Particles id={props.id} init={particlesInit} options={basic}/>
+    return <Particles id={props.id} particlesInit={particlesInit} options={basic}/>
 };

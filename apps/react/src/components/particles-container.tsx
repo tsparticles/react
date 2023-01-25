@@ -24,7 +24,7 @@ export class ParticlesContainer extends React.PureComponent<IProps> {
     }
 
     render() {
-        return <Particles options={this.props.options} className="frame-layout__particles"
-                          init={this.particlesInit} loaded={this.particlesLoaded}/>
+        return <Particles options={this.props.options}
+                          particlesInit={this.particlesInit} particlesLoaded={this.particlesLoaded}/>
     }
 }

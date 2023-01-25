@@ -6,13 +6,13 @@ import './App.css';
 import particlesOptions from "./particles.json";
 
 function App() {
-    const particlesInit = useCallback(main => {
-        loadFull(main);
+    const particlesInit = useCallback(async engine => {
+        await loadFull(engine);
     }, [])
 
     return (
         <div className="App">
-            <Particles options={particlesOptions} init={particlesInit}/>
+            <Particles options={particlesOptions} particlesInit={particlesInit}/>
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo"/>
                 <p>

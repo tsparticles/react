@@ -1,10 +1,15 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Particles from '@tsparticles/react'
+import Head from 'next/head';
+import Image from 'next/image';
+import { useCallback } from 'react';
+import Particles from '@tsparticles/react';
 import { loadBigCirclesPreset } from "tsparticles-preset-big-circles";
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
+    const particlesInit = useCallback(async (engine) => {
+        await loadBigCirclesPreset(engine);
+    }, []);
+
     return (
         <div className={styles.container}>
             <Head>
@@ -71,7 +76,7 @@ export default function Home() {
                 fullScreen: {
                     zIndex: -1
                 }
-            }} init={async (engine) => await loadBigCirclesPreset(engine)}/>
+            }} particlesInit={particlesInit}/>
         </div>
     )
 }

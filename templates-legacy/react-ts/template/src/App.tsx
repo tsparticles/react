@@ -13,7 +13,7 @@ function App() {
 
     return (
         <div className="App">
-            <Particles options={particlesOptions as ISourceOptions} init={particlesInit}/>
+            <Particles options={particlesOptions as ISourceOptions} particlesInit={particlesInit}/>
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo"/>
                 <p>

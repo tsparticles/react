@@ -8,7 +8,7 @@ import { tsParticles } from "@tsparticles/engine";
 const defaultId = "tsparticles";
 
 /**
- * @param {{id?: string,options?: ISourceOptions,params?: ISourceOptions,className?: string,canvasClassName?: string,container?: RefObject<Container>}}
+ * @param {{id?: string,options?: ISourceOptions,url?: string,particlesInit?: (tsParticles: Engine) => Promise<void>,particlesLoaded?: (container: Container) => Promise<void>
  */
 export default class Particles extends Component<IParticlesProps, IParticlesState> {
     static defaultProps: IParticlesProps = {
@@ -54,8 +54,8 @@ export default class Particles extends Component<IParticlesProps, IParticlesStat
 
     componentDidMount(): void {
         (async () => {
-            if (this.props.init) {
-                await this.props.init(tsParticles);
+            if (this.props.particlesInit) {
+                await this.props.particlesInit(tsParticles);
             }
 
             this.setState(
@@ -74,11 +74,11 @@ export default class Particles extends Component<IParticlesProps, IParticlesStat
     }
 
     render(): ReactNode {
-        const { className, canvasClassName, id } = this.props;
+        const { id } = this.props;
 
         return (
-            <div className={className} id={id}>
-                <canvas className={canvasClassName} />
+            <div id={id}>
+                <canvas />
             </div>
         );
     }
@@ -99,8 +99,8 @@ export default class Particles extends Component<IParticlesProps, IParticlesStat
                 library: container,
             });
 
-            if (this.props.loaded) {
-                await this.props.loaded(container);
+            if (this.props.particlesLoaded) {
+                await this.props.particlesLoaded(container);
             }
         };
 
@@ -113,7 +113,7 @@ export default class Particles extends Component<IParticlesProps, IParticlesStat
                       }
                     : {
                           id,
-                          options: this.props.params ?? this.props.options,
+                          options: this.props.options,
                       }
             );
 
