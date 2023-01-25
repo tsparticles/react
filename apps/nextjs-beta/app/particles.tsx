@@ -3,8 +3,8 @@
 import { loadFull } from "tsparticles";
 import Particles from "@tsparticles/react";
 import { useCallback } from "react";
-import { Engine } from "tsparticles-engine";
-import { basic } from "tsparticles-demo-configs";
+import type { Engine } from "@tsparticles/engine";
+import { basic } from "@tsparticles/demo-configs";
 
 export default function ParticlesComponent(props: { id: string }) {
     const particlesInit = useCallback(async (engine: Engine) => {

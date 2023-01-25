@@ -3,9 +3,7 @@ import { FrameThumbsContainer } from './frame-thumbs-container';
 import { ParticlesContainer } from './particles-container';
 import { Subscription } from 'rxjs';
 import { onKeyPressed } from '../streams/key-pressed';
-import type { ISourceOptions } from "tsparticles-engine";
-
-
+import type { ISourceOptions } from "@tsparticles/engine";
 const getFrameCode = (options: ISourceOptions) => {
     const paramsCode = JSON.stringify(options, null, 4)
         .split('\n')

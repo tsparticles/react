@@ -1,6 +1,6 @@
 import * as React from 'react';
+import type { Container, Engine, ISourceOptions } from "@tsparticles/engine";
 import Particles from '@tsparticles/react';
-import type { Container, Engine, ISourceOptions } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
 
 interface IProps {
