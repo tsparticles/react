@@ -2,8 +2,8 @@
   "package": {
     "dependencies": {
       "@tsparticles/react": "^2.8.0",
-      "@tsparticles/engine": "^3.0.0-alpha.0",
-      "tsparticles": "^3.0.0-alpha.0",
+      "@tsparticles/engine": "^3.0.0-alpha.1",
+      "tsparticles": "^3.0.0-alpha.1",
       "tslib": "^2.4.1"
     }
   }
