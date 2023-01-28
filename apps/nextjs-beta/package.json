@@ -9,7 +9,7 @@
         "lint": "next lint"
     },
     "dependencies": {
-        "@next/font": "13.1.5",
+        "@next/font": "13.1.6",
         "@tsparticles/demo-configs": "^3.0.0-alpha.1",
         "@tsparticles/engine": "^3.0.0-alpha.1",
         "@tsparticles/react": "^2.8.0",
