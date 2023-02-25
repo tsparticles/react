@@ -65,11 +65,11 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/matteobruni/tsparticles.git",
+        "url": "git+https://github.com/tsparticles/react.git",
         "directory": "templates/react"
     },
     "bugs": {
-        "url": "https://github.com/matteobruni/tsparticles/issues"
+        "url": "https://github.com/tsparticles/react/issues"
     },
     "funding": [
         {

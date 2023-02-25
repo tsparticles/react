@@ -25,7 +25,7 @@
         "install": "node ./scripts/install.js"
     },
     "repository": {
-        "url": "https://github.com/matteobruni/tsparticles",
+        "url": "https://github.com/tsparticles/react",
         "directory": "components/react-alt",
         "type": "git"
     },
@@ -93,7 +93,7 @@
         }
     ],
     "bugs": {
-        "url": "https://github.com/matteobruni/tsparticles/issues"
+        "url": "https://github.com/tsparticles/react/issues"
     },
     "author": "Matteo Bruni <matteo.bruni@me.com>",
     "license": "MIT",
