@@ -42,7 +42,7 @@
         "process": "^0.11.10",
         "react-syntax-highlighter": "^15.5.0",
         "rimraf": "4.4.0",
-        "typescript": "^4.9.4"
+        "typescript": "^5.0.0"
     },
     "dependencies": {
         "react": "^18.2.0",
