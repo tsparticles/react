@@ -195,7 +195,7 @@ export const frames: TFrame[] = [
           },
         },
       },
-      retina_detect: true,
+      detectRetina: true,
     },
     slug: "night-sky",
   },
@@ -254,7 +254,7 @@ export const frames: TFrame[] = [
           },
         },
       },
-      retina_detect: false,
+      detectRetina: false,
     },
     slug: "images",
   },
@@ -262,7 +262,7 @@ export const frames: TFrame[] = [
     backgroundColor: "linear-gradient(45deg, #45484d 0%,#000000 100%)",
     name: "Polygon mask",
     options: {
-      fps_limit: 60,
+      fpsLimit: 60,
       particles: {
         number: {
           value: 200,
@@ -310,7 +310,7 @@ export const frames: TFrame[] = [
           },
         },
       },
-      retina_detect: false,
+      detectRetina: false,
       interactivity: {
         events: {
           onHover: {
