@@ -41,7 +41,7 @@
         "prettier": "^2.8.3",
         "process": "^0.11.10",
         "react-syntax-highlighter": "^15.5.0",
-        "rimraf": "4.4.0",
+        "rimraf": "4.4.1",
         "typescript": "^5.0.0"
     },
     "dependencies": {
