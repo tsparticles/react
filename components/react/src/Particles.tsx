@@ -1,6 +1,6 @@
 import React, { Component, MutableRefObject, ReactNode } from "react";
 import { tsParticles, Container } from "tsparticles-engine";
-import equal from "fast-deep-equal/react";
+import equal from "deep-eql";
 import type { IParticlesProps } from "./IParticlesProps";
 import type { IParticlesState } from "./IParticlesState";
 import type { ISourceOptions } from "tsparticles-engine";
@@ -42,6 +42,8 @@ export default class Particles extends Component<IParticlesProps, IParticlesStat
     }
 
     shouldComponentUpdate(nextProps: Readonly<IParticlesProps>): boolean {
+        console.dir({ props: this.props, nextProps });
+
         return !equal(nextProps, this.props);
     }
 
@@ -121,7 +123,7 @@ export default class Particles extends Component<IParticlesProps, IParticlesStat
         const id = this.props.id ?? Particles.defaultProps.id ?? defaultId,
             container = this.props.url
                 ? await tsParticles.loadJSON(id, this.props.url)
-                : await tsParticles.load(id, this.props.params ?? this.props.options);
+                : await tsParticles.load(id, this.props.options ?? this.props.params);
 
         await cb(container);
     }
