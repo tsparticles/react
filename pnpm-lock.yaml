@@ -63,8 +63,8 @@ importers:
   apps/nextjs-beta:
     dependencies:
       '@next/font':
-        specifier: 13.3.1
-        version: 13.3.1
+        specifier: 13.3.3
+        version: 13.3.3
       '@types/node':
         specifier: ^18.11.17
         version: 18.11.18
@@ -2831,8 +2831,8 @@ packages:
     dependencies:
       glob: 7.1.7
 
-  /@next/font@13.3.1:
-    resolution: {integrity: sha512-S8Shizt4xlHDItXTAowEoyktiaLIEzTxJeXPaRu+VDeb21yXu7kMX2DUQE5Un+kb/ViCaAdWlyltCuS2sywEjA==}
+  /@next/font@13.3.3:
+    resolution: {integrity: sha512-aqxYL3uf9pAxJCKhhJOOZYOyCmcpcUxaop1XfOxtC48kjgUNsfTOOqcmmDRUyCkklh/UL/lnxXe+LvdWqjV65A==}
     dev: false
 
   /@next/swc-android-arm-eabi@13.1.1:
