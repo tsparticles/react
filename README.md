@@ -328,9 +328,9 @@ const App = () => {
 
 #### particles.json
 
-Find all configuration options [here](https://particles.js.org/docs/interfaces/Options_Interfaces_IOptions.IOptions.html).
+Find all configuration options [here](https://particles.js.org/docs/interfaces/tsParticles_Engine.Options_Interfaces_IOptions.IOptions.html).
 
-You can find sample json configurations [here](https://github.com/matteobruni/tsparticles/tree/main/websites/particles.js.org/presets) 📖
+You can find sample configurations [here](https://github.com/matteobruni/tsparticles/tree/main/utils/configs/src) 📖
 
 ## Demos
 
