@@ -513,7 +513,7 @@ importers:
   templates/react-ts:
     dependencies:
       react-particles:
-        specifier: workspace:^
+        specifier: ^2.9.3
         version: link:../../components/react/dist
       tslib:
         specifier: ^2.5.0
