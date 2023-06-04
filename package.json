@@ -7,13 +7,13 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@commitlint/cli": "^17.6.3",
-    "@commitlint/config-conventional": "^17.6.3",
-    "@parcel/core": "^2.8.3",
-    "@parcel/transformer-sass": "^2.8.3",
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
+    "@parcel/core": "^2.9.1",
+    "@parcel/transformer-sass": "^2.9.1",
     "husky": "^8.0.3",
     "lerna": "^6.6.2",
-    "parcel": "^2.8.3",
+    "parcel": "^2.9.1",
     "process": "^0.11.10",
     "react-error-overlay": "^6.0.11"
   },

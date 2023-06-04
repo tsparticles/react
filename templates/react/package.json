@@ -86,10 +86,10 @@
     }
   ],
   "dependencies": {
-    "react-particles": "workspace:^",
-    "tslib": "^2.5.0",
-    "tsparticles": "^2.9.3",
-    "tsparticles-engine": "^2.9.3"
+    "react-particles": "^2.9.3",
+    "tslib": "^2.5.3",
+    "tsparticles": "^2.10.0",
+    "tsparticles-engine": "^2.10.0"
   },
   "devDependencies": {
     "fs-extra": "^11.1.1"
