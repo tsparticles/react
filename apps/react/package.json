@@ -1,7 +1,7 @@
 {
   "name": "react-particles-demo",
   "private": true,
-  "version": "2.9.3",
+  "version": "2.10.1",
   "description": "> TODO: description",
   "author": "Matteo Bruni <matteo.bruni@me.com>",
   "homepage": "https://particles.js.org",
@@ -49,7 +49,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-particles": "^2.9.3",
+    "react-particles": "^2.10.1",
     "rxjs": "^7.8.1",
     "tsparticles": "^2.10.1",
     "tsparticles-demo-configs": "^2.10.1",

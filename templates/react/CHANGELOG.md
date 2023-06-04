@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.10.1 (2023-06-04)
+
+
+### Features
+
+* updated templates to React 18 ([d9ae354](https://github.com/tsparticles/react/commit/d9ae354d71f245e85009c96007bd59df7bd422c8))
+
+
+
+
+
 ## [2.9.3](https://github.com/matteobruni/tsparticles/compare/cra-template-particles@2.9.2...cra-template-particles@2.9.3) (2023-02-12)
 
 **Note:** Version bump only for package cra-template-particles

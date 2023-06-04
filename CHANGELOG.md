@@ -8,6 +8,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
+* changed deep equal library, the previous one had a bug for circular objects and freezed all ([ccb5f12](https://github.com/tsparticles/react/commit/ccb5f124a69ce622fe591fc8944015da64f8f799))
 * **deps:** update dependency @next/font to v13.2.1 ([05372e8](https://github.com/tsparticles/react/commit/05372e8b78d10b0e2e1360c046b6eb32c279389f))
 * **deps:** update dependency @next/font to v13.2.3 ([abdded8](https://github.com/tsparticles/react/commit/abdded840c5e46cdc428a591ccf6448bd601bd63))
 * **deps:** update dependency @next/font to v13.3.0 ([090176d](https://github.com/tsparticles/react/commit/090176de2b16bb7589241bf06fa40f92d0191f4c))
@@ -18,29 +19,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * **deps:** update dependency @next/font to v13.4.1 ([5b21bdb](https://github.com/tsparticles/react/commit/5b21bdb26fdcd00762cf5043ce6d3f025720462d))
 
 
+### Features
 
-
-
-## [0.3.3](https://github.com/matteobruni/tsparticles/compare/nextjs-beta-demo@0.3.2...nextjs-beta-demo@0.3.3) (2023-02-12)
-
-**Note:** Version bump only for package nextjs-beta-demo
-
-## [0.3.2](https://github.com/matteobruni/tsparticles/compare/nextjs-beta-demo@0.3.1...nextjs-beta-demo@0.3.2) (2023-02-12)
-
-**Note:** Version bump only for package nextjs-beta-demo
-
-## [0.3.1](https://github.com/matteobruni/tsparticles/compare/nextjs-beta-demo@0.3.0...nextjs-beta-demo@0.3.1) (2023-02-11)
-
-**Note:** Version bump only for package nextjs-beta-demo
-
-# [0.3.0](https://github.com/matteobruni/tsparticles/compare/nextjs-beta-demo@0.2.0...nextjs-beta-demo@0.3.0) (2023-02-10)
-
-**Note:** Version bump only for package nextjs-beta-demo
-
-# [0.2.0](https://github.com/matteobruni/tsparticles/compare/nextjs-beta-demo@0.1.1...nextjs-beta-demo@0.2.0) (2023-01-18)
-
-**Note:** Version bump only for package nextjs-beta-demo
-
-## 0.1.1 (2022-12-25)
-
-**Note:** Version bump only for package nextjs-beta-demo
+* updated templates to React 18 ([d9ae354](https://github.com/tsparticles/react/commit/d9ae354d71f245e85009c96007bd59df7bd422c8))

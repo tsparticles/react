@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.10.1 (2023-06-04)
+
+
+### Bug Fixes
+
+* changed deep equal library, the previous one had a bug for circular objects and freezed all ([ccb5f12](https://github.com/tsparticles/react/commit/ccb5f124a69ce622fe591fc8944015da64f8f799))
+
+
+
+
+
 ## [2.9.3](https://github.com/matteobruni/tsparticles/compare/react-tsparticles@2.9.2...react-tsparticles@2.9.3) (2023-02-12)
 
 **Note:** Version bump only for package react-tsparticles
