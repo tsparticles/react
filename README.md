@@ -26,8 +26,8 @@ yarn add react-particles
 
 Starting from version 1.17.0 there are two official `create-react-app` templates:
 
--   `cra-template-particles`: Simple ReactJS template with full screen particles, using JavaScript
--   `cra-template-particles-typescript`: Simple ReactJS template with full screen particles, using TypeScript
+- `cra-template-particles`: Simple ReactJS template with full screen particles, using JavaScript
+- `cra-template-particles-typescript`: Simple ReactJS template with full screen particles, using TypeScript
 
 You can simply install them using the `create-react-app` command like this:
 
@@ -313,7 +313,7 @@ const App = () => {
 ### Props
 
 | Prop            | Type     | Definition                                                                                                                                          |
-| --------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+|-----------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | id              | string   | The id of the element.                                                                                                                              |
 | width           | string   | The width of the canvas.                                                                                                                            |
 | height          | string   | The height of the canvas.                                                                                                                           |
@@ -322,13 +322,14 @@ const App = () => {
 | style           | object   | The style of the canvas element.                                                                                                                    |
 | className       | string   | The class name of the canvas wrapper.                                                                                                               |
 | canvasClassName | string   | the class name of the canvas.                                                                                                                       |
-| container       | object   | The instance of the [particles container](https://particles.js.org/docs/classes/tsParticles_Engine.Core_Container.Container.html)                                                |
+| container       | object   | The instance of the [particles container](https://particles.js.org/docs/classes/tsParticles_Engine.Core_Container.Container.html)                   |
 | init            | function | This function is called after the tsParticles instance initialization, the instance is the parameter and you can load custom presets or shapes here |
 | loaded          | function | This function is called when particles are correctly loaded in canvas, the current container is the parameter and you can customize it here         |
 
 #### particles.json
 
-Find all configuration options [here](https://particles.js.org/docs/interfaces/tsParticles_Engine.Options_Interfaces_IOptions.IOptions.html).
+Find all configuration
+options [here](https://particles.js.org/docs/interfaces/tsParticles_Engine.Options_Interfaces_IOptions.IOptions.html).
 
 You can find sample configurations [here](https://github.com/matteobruni/tsparticles/tree/main/utils/configs/src) 📖
 
