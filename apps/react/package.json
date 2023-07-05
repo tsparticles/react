@@ -38,7 +38,7 @@
     "eslint-config-prettier": "^8.8.0",
     "node-sass": "^9.0.0",
     "parcel": "^2.9.1",
-    "prettier": "^2.8.8",
+    "prettier": "^3.0.0",
     "process": "^0.11.10",
     "react-error-overlay": "^6.0.11",
     "react-syntax-highlighter": "^15.5.0",
