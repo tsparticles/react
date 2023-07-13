@@ -1,11 +1,6 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "packages": [
-    "apps/*",
-    "components/*",
-    "templates/*"
-  ],
-  "useWorkspaces": true,
+  "packages": ["apps/*", "components/*", "templates/*"],
   "version": "2.10.1",
   "npmClient": "pnpm",
   "conventionalCommits": true,
