@@ -3,12 +3,11 @@ import { tsParticles, Container } from "tsparticles-engine";
 import equal from "deep-eql";
 import type { IParticlesProps } from "./IParticlesProps";
 import type { IParticlesState } from "./IParticlesState";
-import type { ISourceOptions } from "tsparticles-engine";
 
 const defaultId = "tsparticles";
 
 /**
- * @param {{id?: string,width?: string,height?: string,options?: ISourceOptions,params?: ISourceOptions,style?: CSSProperties,className?: string,canvasClassName?: string,container?: RefObject<Container>}}
+ * @param {{id?: string,width?: string,height?: string,options?: import("tsparticles-engine").ISourceOptions,params?: import("tsparticles-engine").ISourceOptions,style?: import("react").CSSProperties,className?: string,canvasClassName?: string,container?: RefObject<Container>}}
  */
 export default class Particles extends Component<IParticlesProps, IParticlesState> {
     static defaultProps: IParticlesProps = {
