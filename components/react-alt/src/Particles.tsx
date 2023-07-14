@@ -66,7 +66,7 @@ export default class Particles extends Component<IParticlesProps, IParticlesStat
                 },
                 async () => {
                     await this.loadParticles();
-                }
+                },
             );
         })();
     }
