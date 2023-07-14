@@ -8,7 +8,7 @@
       "@types/react": "^18.2.8",
       "@types/react-dom": "^18.2.4",
       "@types/jest": "^29.5.2",
-      "react-particles": "^2.10.1",
+      "react-particles": "^2.11.0",
       "tsparticles-engine": "^2.10.1",
       "tslib": "^2.5.3",
       "typescript": "^5.1.3",

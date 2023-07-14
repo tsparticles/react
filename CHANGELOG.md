@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.11.0](https://github.com/tsparticles/react/compare/v2.10.1...v2.11.0) (2023-07-14)
+
+
+### Bug Fixes
+
+* fixed container link, closes [#34](https://github.com/tsparticles/react/issues/34) ([a1c206a](https://github.com/tsparticles/react/commit/a1c206af0f0245715b67b6a6eafd906c897acc8e))
+
+
+
+
+
 ## 2.10.1 (2023-06-04)
 
 

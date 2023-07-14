@@ -1,6 +1,6 @@
 {
   "name": "nextjs",
-  "version": "2.10.1",
+  "version": "2.11.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -13,7 +13,7 @@
     "next": "^13.4.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-particles": "^2.10.1",
+    "react-particles": "^2.11.0",
     "tsparticles-engine": "^2.11.0",
     "tsparticles-preset-big-circles": "^2.11.0",
     "typescript": "^5.1.6"
