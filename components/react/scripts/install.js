@@ -1,5 +1,6 @@
-const path = require('path');
+const path = require("path");
 const reactParticlesJsFoundError = "react-particles-js-found";
+const reactTsParticlesFoundError = "react-tsparticles-found";
 
 if (!process.env.INIT_CWD) {
     return;
@@ -29,8 +30,18 @@ try {
 
         throw new Error(reactParticlesJsFoundError);
     }
+
+    if (dependencies["react-tsparticles"]) {
+        console.error("\x1b[31m%s\x1b[0m", "The package react-tsparticles is the same as react-particles and it's not needed. Please consider removing the duplicate dependency.");
+
+        throw new Error(reactTsParticlesFoundError);
+    }
 } catch (error) {
     if (error.message === reactParticlesJsFoundError) {
+        throw error;
+    }
+
+    if (error.message === reactTsParticlesFoundError) {
         throw error;
     }
 
