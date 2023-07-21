@@ -2,6 +2,7 @@ import * as React from 'react';
 import Particles from 'react-particles';
 import type { Container, Engine, IOptions, RecursivePartial } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
+import { loadPolygonMaskPlugin } from "tsparticles-plugin-polygon-mask";
 
 interface IProps {
     options: RecursivePartial<IOptions>;
@@ -17,6 +18,7 @@ export class ParticlesContainer extends React.PureComponent<IProps> {
 
     async particlesInit(engine: Engine): Promise<void> {
         await loadFull(engine);
+        await loadPolygonMaskPlugin(engine);
     }
 
     async particlesLoaded(container?: Container): Promise<void> {
