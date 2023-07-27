@@ -1,8 +1,8 @@
 import React, { Component, MutableRefObject, ReactNode } from "react";
-import { tsParticles, Container } from "tsparticles-engine";
-import equal from "deep-eql";
+import { tsParticles, type Container } from "tsparticles-engine";
 import type { IParticlesProps } from "./IParticlesProps";
 import type { IParticlesState } from "./IParticlesState";
+import { deepCompare } from "./Utils";
 
 const defaultId = "tsparticles";
 
@@ -41,7 +41,17 @@ export default class Particles extends Component<IParticlesProps, IParticlesStat
     }
 
     shouldComponentUpdate(nextProps: Readonly<IParticlesProps>): boolean {
-        return !equal(nextProps, this.props);
+        return nextProps.url !== this.props.url &&
+            nextProps.id !== this.props.id &&
+            nextProps.canvasClassName !== this.props.canvasClassName &&
+            nextProps.className !== this.props.className &&
+            nextProps.height !== this.props.height &&
+            nextProps.width !== this.props.width &&
+            !deepCompare(nextProps.style, this.props.style) &&
+            nextProps.init !== this.props.init &&
+            nextProps.loaded !== this.props.loaded &&
+            nextProps &&
+            !deepCompare(nextProps.options ?? nextProps.params, this.props.options && this.props.params);
     }
 
     componentDidUpdate(): void {
@@ -103,25 +113,23 @@ export default class Particles extends Component<IParticlesProps, IParticlesStat
             return;
         }
 
-        const cb = async (container?: Container) => {
-            if (this.props.container) {
-                (this.props.container as MutableRefObject<Container | undefined>).current = container;
-            }
-
-            this.setState({
-                library: container,
+        const id = this.props.id ?? Particles.defaultProps.id ?? defaultId,
+            container = await tsParticles.load({
+                url: this.props.url,
+                id,
+                options: this.props.options ?? this.props.params,
             });
 
-            if (this.props.loaded) {
-                await this.props.loaded(container);
-            }
-        };
+        if (this.props.container) {
+            (this.props.container as MutableRefObject<Container | undefined>).current = container;
+        }
 
-        const id = this.props.id ?? Particles.defaultProps.id ?? defaultId,
-            container = this.props.url
-                ? await tsParticles.loadJSON(id, this.props.url)
-                : await tsParticles.load(id, this.props.options ?? this.props.params);
+        this.setState({
+            library: container,
+        });
 
-        await cb(container);
+        if (this.props.loaded) {
+            await this.props.loaded(container);
+        }
     }
 }
