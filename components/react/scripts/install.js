@@ -7,17 +7,17 @@ if (!process.env.INIT_CWD) {
 }
 
 try {
+    const pkgSettings = require(path.join(process.env.INIT_CWD, "package.json"));
+
+    if (!pkgSettings || !pkgSettings.dependencies || !pkgSettings.dependencies["react-particles"]) {
+        return;
+    }
+
     console.log("Thank you for installing tsParticles official React.js component.");
     console.log("Remember to checkout the official website https://particles.js.org to explore some samples.");
     console.log("You can find more samples on CodePen too: https://codepen.io/collection/DPOage");
     console.log("If you need documentation you can find it here: https://particles.js.org");
     console.log("Remember to leave a star on the tsParticles repository if you like the project and want to support it: https://github.com/matteobruni/tsparticles");
-
-    const pkgSettings = require(path.join(process.env.INIT_CWD, "package.json"));
-
-    if (!pkgSettings) {
-        return;
-    }
 
     const dependencies = pkgSettings.dependencies;
 

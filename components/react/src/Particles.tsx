@@ -41,7 +41,10 @@ export default class Particles extends Component<IParticlesProps, IParticlesStat
     }
 
     shouldComponentUpdate(nextProps: Readonly<IParticlesProps>): boolean {
-        return nextProps.url !== this.props.url &&
+        console.log("should update");
+
+        return (
+            nextProps.url !== this.props.url &&
             nextProps.id !== this.props.id &&
             nextProps.canvasClassName !== this.props.canvasClassName &&
             nextProps.className !== this.props.className &&
@@ -50,8 +53,8 @@ export default class Particles extends Component<IParticlesProps, IParticlesStat
             !deepCompare(nextProps.style, this.props.style) &&
             nextProps.init !== this.props.init &&
             nextProps.loaded !== this.props.loaded &&
-            nextProps &&
-            !deepCompare(nextProps.options ?? nextProps.params, this.props.options && this.props.params);
+            !deepCompare(nextProps.options ?? nextProps.params, this.props.options && this.props.params)
+        );
     }
 
     componentDidUpdate(): void {
