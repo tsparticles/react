@@ -1,6 +1,6 @@
 {
   "name": "react-demo",
-  "version": "0.1.0",
+  "version": "2.12.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -8,10 +8,10 @@
     "@testing-library/user-event": "^14.4.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-particles": "^2.11.0",
+    "react-particles": "^2.12.0",
     "react-scripts": "^5.0.1",
-    "tsparticles-engine": "^2.12.0",
     "tsparticles": "^2.12.0",
+    "tsparticles-engine": "^2.12.0",
     "web-vitals": "^3.4.0"
   },
   "scripts": {
