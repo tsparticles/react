@@ -91,6 +91,6 @@
     "react": ">=16"
   },
   "dependencies": {
-    "tsparticles-engine": "^2.11.1"
+    "tsparticles-engine": "^2.12.0"
   }
 }
