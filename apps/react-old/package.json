@@ -35,7 +35,7 @@
     "@typescript-eslint/parser": "^6.2.1",
     "browserslist": "^4.21.10",
     "eslint": "^8.46.0",
-    "eslint-config-prettier": "^8.10.0",
+    "eslint-config-prettier": "^9.0.0",
     "node-sass": "^9.0.0",
     "parcel": "^2.9.3",
     "prettier": "^3.0.1",
