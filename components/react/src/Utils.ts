@@ -17,8 +17,6 @@ export function deepCompare(
     }
 
     for (const key of keys1) {
-        console.log("key");
-
         const value1: unknown = (obj1 as Record<string, unknown>)[key],
             value2: unknown = (obj2 as Record<string, unknown>)[key];
 
