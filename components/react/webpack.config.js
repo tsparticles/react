@@ -30,10 +30,10 @@ const getConfig = (entry) => {
             extensions: [ ".js", ".json" ]
         },
         externals: [ {
-            "tsparticles-engine": {
-                commonjs: "tsparticles-engine",
-                commonjs2: "tsparticles-engine",
-                amd: "tsparticles-engine",
+            "@tsparticles/engine": {
+                commonjs: "@tsparticles/engine",
+                commonjs2: "@tsparticles/engine",
+                amd: "@tsparticles/engine",
                 root: "window"
             }
         } ],

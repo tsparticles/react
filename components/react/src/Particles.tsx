@@ -1,5 +1,5 @@
 import React, { Component, MutableRefObject, ReactNode } from "react";
-import { tsParticles, type Container } from "tsparticles-engine";
+import { tsParticles, type Container } from "@tsparticles/engine";
 import type { IParticlesProps } from "./IParticlesProps";
 import type { IParticlesState } from "./IParticlesState";
 import { deepCompare } from "./Utils";
@@ -7,7 +7,7 @@ import { deepCompare } from "./Utils";
 const defaultId = "tsparticles";
 
 /**
- * @param {{id?: string,width?: string,height?: string,options?: import("tsparticles-engine").ISourceOptions,params?: import("tsparticles-engine").ISourceOptions,style?: import("react").CSSProperties,className?: string,canvasClassName?: string,container?: RefObject<Container>}}
+ * @param {{id?: string,width?: string,height?: string,options?: import("@tsparticles/engine").ISourceOptions,params?: import("@tsparticles/engine").ISourceOptions,style?: import("react").CSSProperties,className?: string,canvasClassName?: string,container?: RefObject<Container>}}
  */
 export default class Particles extends Component<IParticlesProps, IParticlesState> {
     static defaultProps: IParticlesProps = {
@@ -52,7 +52,6 @@ export default class Particles extends Component<IParticlesProps, IParticlesStat
             nextProps.height !== this.props.height ||
             nextProps.width !== this.props.width ||
             !deepCompare(nextProps.style, this.props.style) ||
-            nextProps.init !== this.props.init ||
             nextProps.loaded !== this.props.loaded ||
             !deepCompare(nextOptions, currentOptions, key => key.startsWith("_"))
         );
@@ -70,10 +69,6 @@ export default class Particles extends Component<IParticlesProps, IParticlesStat
 
     componentDidMount(): void {
         (async () => {
-            if (this.props.init) {
-                await this.props.init(tsParticles);
-            }
-
             this.setState(
                 {
                     init: true,

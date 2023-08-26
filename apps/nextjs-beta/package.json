@@ -1,6 +1,6 @@
 {
   "name": "nextjs-beta-demo",
-  "version": "2.12.2",
+  "version": "3.0.0-beta.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -18,10 +18,10 @@
     "next": "^13.4.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-particles": "^2.12.2",
-    "tsparticles": "^2.12.0",
-    "tsparticles-demo-configs": "^2.12.0",
-    "tsparticles-engine": "^2.12.0",
+    "@tsparticles/react": "^3.0.0-beta.1",
+    "tsparticles": "^3.0.0-beta.1",
+    "@tsparticles/configs": "^3.0.0-beta.1",
+    "@tsparticles/engine": "^3.0.0-beta.1",
     "typescript": "^5.1.6"
   }
 }

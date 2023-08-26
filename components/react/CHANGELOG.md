@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [2.12.2](https://github.com/tsparticles/react/compare/v2.12.1...v2.12.2) (2023-08-11)
+## [3.0.0-beta.1](https://github.com/tsparticles/react/compare/v2.12.1...v3.0.0-beta.1) (2023-08-11)
 
 
 ### Bug Fixes
@@ -14,17 +14,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [2.12.1](https://github.com/tsparticles/react/compare/v2.12.0...v2.12.1) (2023-08-04)
+## [2.12.1](https://github.com/tsparticles/react/compare/v3.0.0-beta.1...v2.12.1) (2023-08-04)
 
-**Note:** Version bump only for package react-particles
-
-
+**Note:** Version bump only for package @tsparticles/react
 
 
 
-# [2.12.0](https://github.com/tsparticles/react/compare/v2.11.0...v2.12.0) (2023-08-04)
 
-**Note:** Version bump only for package react-particles
+
+# [3.0.0-beta.1](https://github.com/tsparticles/react/compare/v2.11.0...v3.0.0-beta.1) (2023-08-04)
+
+**Note:** Version bump only for package @tsparticles/react
 
 
 
@@ -32,7 +32,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [2.11.0](https://github.com/tsparticles/react/compare/v2.10.1...v2.11.0) (2023-07-14)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
 
 
@@ -49,95 +49,95 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [2.9.3](https://github.com/matteobruni/tsparticles/compare/react-particles@2.9.2...react-particles@2.9.3) (2023-02-12)
+## [2.9.3](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.9.2...@tsparticles/react@2.9.3) (2023-02-12)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-## [2.9.2](https://github.com/matteobruni/tsparticles/compare/react-particles@2.9.1...react-particles@2.9.2) (2023-02-12)
+## [2.9.2](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.9.1...@tsparticles/react@2.9.2) (2023-02-12)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-## [2.9.1](https://github.com/matteobruni/tsparticles/compare/react-particles@2.9.0...react-particles@2.9.1) (2023-02-11)
+## [2.9.1](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.9.0...@tsparticles/react@2.9.1) (2023-02-11)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-# [2.9.0](https://github.com/matteobruni/tsparticles/compare/react-particles@2.8.0...react-particles@2.9.0) (2023-02-10)
+# [2.9.0](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.8.0...@tsparticles/react@2.9.0) (2023-02-10)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-# [2.8.0](https://github.com/matteobruni/tsparticles/compare/react-particles@2.7.1...react-particles@2.8.0) (2023-01-18)
+# [2.8.0](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.7.1...@tsparticles/react@2.8.0) (2023-01-18)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-## [2.7.1](https://github.com/matteobruni/tsparticles/compare/react-particles@2.7.0...react-particles@2.7.1) (2022-12-25)
+## [2.7.1](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.7.0...@tsparticles/react@2.7.1) (2022-12-25)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-# [2.7.0](https://github.com/matteobruni/tsparticles/compare/react-particles@2.6.0...react-particles@2.7.0) (2022-12-23)
+# [2.7.0](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.6.0...@tsparticles/react@2.7.0) (2022-12-23)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-# [2.6.0](https://github.com/matteobruni/tsparticles/compare/react-particles@2.5.3...react-particles@2.6.0) (2022-12-06)
+# [2.6.0](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.5.3...@tsparticles/react@2.6.0) (2022-12-06)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-## [2.5.3](https://github.com/matteobruni/tsparticles/compare/react-particles@2.5.2...react-particles@2.5.3) (2022-11-07)
+## [2.5.3](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.5.2...@tsparticles/react@2.5.3) (2022-11-07)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-## [2.5.2](https://github.com/matteobruni/tsparticles/compare/react-particles@2.5.1...react-particles@2.5.2) (2022-11-07)
+## [2.5.2](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.5.1...@tsparticles/react@2.5.2) (2022-11-07)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-## [2.5.1](https://github.com/matteobruni/tsparticles/compare/react-particles@2.5.0...react-particles@2.5.1) (2022-11-03)
+## [2.5.1](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.5.0...@tsparticles/react@2.5.1) (2022-11-03)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-# [2.5.0](https://github.com/matteobruni/tsparticles/compare/react-particles@2.4.0...react-particles@2.5.0) (2022-11-02)
+# [2.5.0](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.4.0...@tsparticles/react@2.5.0) (2022-11-02)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-# [2.4.0](https://github.com/matteobruni/tsparticles/compare/react-particles@2.3.3...react-particles@2.4.0) (2022-10-30)
+# [2.4.0](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.3.3...@tsparticles/react@2.4.0) (2022-10-30)
 
 ### Features
 
 -   removed all canvas context save/restore calls ([208722f](https://github.com/matteobruni/tsparticles/commit/208722f0a521246165b7cdc529dfbfbd7a3cf7eb))
 
-## [2.3.3](https://github.com/matteobruni/tsparticles/compare/react-particles@2.3.2...react-particles@2.3.3) (2022-09-30)
+## [2.3.3](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.3.2...@tsparticles/react@2.3.3) (2022-09-30)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-## [2.3.2](https://github.com/matteobruni/tsparticles/compare/react-particles@2.3.1...react-particles@2.3.2) (2022-09-21)
+## [2.3.2](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.3.1...@tsparticles/react@2.3.2) (2022-09-21)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-## [2.3.1](https://github.com/matteobruni/tsparticles/compare/react-particles@2.3.0...react-particles@2.3.1) (2022-09-13)
+## [2.3.1](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.3.0...@tsparticles/react@2.3.1) (2022-09-13)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-# [2.3.0](https://github.com/matteobruni/tsparticles/compare/react-particles@2.2.4...react-particles@2.3.0) (2022-09-11)
+# [2.3.0](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.2.4...@tsparticles/react@2.3.0) (2022-09-11)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-## [2.2.4](https://github.com/matteobruni/tsparticles/compare/react-particles@2.2.2...react-particles@2.2.4) (2022-08-26)
+## [2.2.4](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.2.2...@tsparticles/react@2.2.4) (2022-08-26)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-## [2.2.3](https://github.com/matteobruni/tsparticles/compare/react-particles@2.2.2...react-particles@2.2.3) (2022-08-21)
+## [2.2.3](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.2.2...@tsparticles/react@2.2.3) (2022-08-21)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-## [2.2.2](https://github.com/matteobruni/tsparticles/compare/react-particles@2.2.1...react-particles@2.2.2) (2022-08-16)
+## [2.2.2](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.2.1...@tsparticles/react@2.2.2) (2022-08-16)
 
 ### Bug Fixes
 
 -   fixed double mouse events on mobile using pointer events, closes [#4622](https://github.com/matteobruni/tsparticles/issues/4622) ([1019fa4](https://github.com/matteobruni/tsparticles/commit/1019fa431f8a43cbd45d6adeb5adf94433e6e04b))
 
-## [2.2.1](https://github.com/matteobruni/tsparticles/compare/react-particles@2.2.0...react-particles@2.2.1) (2022-08-12)
+## [2.2.1](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.2.0...@tsparticles/react@2.2.1) (2022-08-12)
 
-**Note:** Version bump only for package react-particles
+**Note:** Version bump only for package @tsparticles/react
 
-# [2.2.0](https://github.com/matteobruni/tsparticles/compare/react-particles@2.1.4...react-particles@2.2.0) (2022-08-11)
+# [2.2.0](https://github.com/matteobruni/tsparticles/compare/@tsparticles/react@2.1.4...@tsparticles/react@2.2.0) (2022-08-11)
 
 ### Bug Fixes
 
@@ -175,7 +175,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 -   added sizeOffset option to destroy split section ([a6b9ba0](https://github.com/matteobruni/tsparticles/commit/a6b9ba0e207f7976c7a91fe1e2091e7fd40effb4))
 -   fixed lazy loading ([60f9689](https://github.com/matteobruni/tsparticles/commit/60f96899bc564e547a49a5e17be4f40fe12288ba))
 -   improved move path generators ([9b67377](https://github.com/matteobruni/tsparticles/commit/9b67377f9208a005b122e312ad4ad3c95a50deb7))
--   preparing react-particles and switching alternate packages ([49e749e](https://github.com/matteobruni/tsparticles/commit/49e749e90e076f0cb22eefe0f3399102f5b9fb35))
+-   preparing @tsparticles/react and switching alternate packages ([49e749e](https://github.com/matteobruni/tsparticles/commit/49e749e90e076f0cb22eefe0f3399102f5b9fb35))
 -   splitting engine from slim and full bundles (v2) ([268b78c](https://github.com/matteobruni/tsparticles/commit/268b78c12d6c54069893d27643cfe7a30f3be777))
 -   updated fpsLimit default value to 120 build: updated all presets to have a fpsLimit of 120 ([d1eff05](https://github.com/matteobruni/tsparticles/commit/d1eff050224c4d65727c0abc3f100d70d3807eb8))
 -   upgraded components ([47060c2](https://github.com/matteobruni/tsparticles/commit/47060c2bafb0f7e21955e2e3ea736592ae189167))

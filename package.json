@@ -1,5 +1,5 @@
 {
-  "name": "react-particles-workspace",
+  "name": "@tsparticles/react-workspace",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -7,13 +7,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@commitlint/cli": "^17.6.7",
-    "@commitlint/config-conventional": "^17.6.7",
-    "@parcel/core": "^2.9.3",
-    "@parcel/transformer-sass": "^2.9.3",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "husky": "^8.0.3",
-    "lerna": "^7.1.4",
-    "parcel": "^2.9.3",
+    "lerna": "^7.1.5",
     "process": "^0.11.10",
     "react-error-overlay": "^6.0.11"
   },

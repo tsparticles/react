@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [2.12.2](https://github.com/tsparticles/react/compare/v2.12.1...v2.12.2) (2023-08-11)
+## [3.0.0-beta.1](https://github.com/tsparticles/react/compare/v2.12.1...v3.0.0-beta.1) (2023-08-11)
 
 **Note:** Version bump only for package nextjs
 
@@ -11,7 +11,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [2.12.1](https://github.com/tsparticles/react/compare/v2.12.0...v2.12.1) (2023-08-04)
+## [2.12.1](https://github.com/tsparticles/react/compare/v3.0.0-beta.1...v2.12.1) (2023-08-04)
 
 **Note:** Version bump only for package nextjs
 
@@ -19,7 +19,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.12.0](https://github.com/tsparticles/react/compare/v2.11.0...v2.12.0) (2023-08-04)
+# [3.0.0-beta.1](https://github.com/tsparticles/react/compare/v2.11.0...v3.0.0-beta.1) (2023-08-04)
 
 **Note:** Version bump only for package nextjs
 
@@ -141,7 +141,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
--   preparing react-particles and switching alternate packages ([49e749e](https://github.com/matteobruni/tsparticles/commit/49e749e90e076f0cb22eefe0f3399102f5b9fb35))
+-   preparing @tsparticles/react and switching alternate packages ([49e749e](https://github.com/matteobruni/tsparticles/commit/49e749e90e076f0cb22eefe0f3399102f5b9fb35))
 
 ## [0.3.3](https://github.com/matteobruni/tsparticles/compare/nextjs@0.3.2...nextjs@0.3.3) (2022-07-01)
 

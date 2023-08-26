@@ -1,15 +1,25 @@
 "use client";
 
+import Particles, { useParticlesPlugins } from "@tsparticles/react";
+import configs from "@tsparticles/configs";
+import { useState, useEffect } from "react";
 import { loadFull } from "tsparticles";
-import Particles from "react-particles";
-import { useCallback } from "react";
-import { Engine } from "tsparticles-engine";
-import configs from "tsparticles-demo-configs";
 
 export default function ParticlesComponent(props: { id: string }) {
-    const particlesInit = useCallback(async (engine: Engine) => {
-        await loadFull(engine);
-    }, []);
+  const [init, setInit] = useState(false);
 
-    return <Particles id={props.id} init={particlesInit} options={configs.basic} />;
-};
+  useEffect(() => {
+    if (init) {
+      return;
+    }
+
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useParticlesPlugins(async (engine) => {
+      await loadFull(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, [init]);
+
+  return <Particles id={props.id} options={configs.basic} />;
+}
