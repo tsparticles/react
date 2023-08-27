@@ -1,118 +1,108 @@
 import Particles, { useParticlesPlugins } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useMemo, useRef } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  const containerRef = useRef(null);
-  const [init, setInit] = useState(false);
-  const { done, error } = useParticlesPlugins(async (engine) => {
-    await loadFull(engine);
-  });
+  const containerRef = useRef(null),
+    initParticlesCb = useCallback(async (engine) => {
+      await loadFull(engine);
+    }, []),
+    { done } = useParticlesPlugins(initParticlesCb),
+    particlesLoaded = useCallback(
+      (container) => {
+        containerRef.current = container;
 
-  console.log({ error, done, init });
-
-  if ((!error && !done) || !init) {
-    setInit(done);
-  }
-
-  const particlesLoaded = useCallback(
-    (container) => {
-      containerRef.current = container;
-
-      window.particlesContainer = container;
-    },
-    [containerRef]
-  );
-
-  const options = useMemo(
-    () => ({
-      fullScreen: {
-        zIndex: -1,
+        window.particlesContainer = container;
       },
-      particles: {
-        number: {
-          value: 100,
+      [containerRef]
+    ),
+    options = useMemo(
+      () => ({
+        fullScreen: {
+          zIndex: -1,
         },
-        links: {
-          enable: true,
-        },
-        move: {
-          enable: true,
-        },
-      },
-      themes: [
-        {
-          name: "light",
-          default: {
-            value: true,
-            auto: true,
-            mode: "light",
+        particles: {
+          number: {
+            value: 100,
           },
-          options: {
-            background: {
-              color: "#ffffff",
-            },
-            particles: {
-              color: {
-                value: "#000000",
-              },
-              links: {
-                color: "#000000",
-              },
-            },
+          links: {
+            enable: true,
+          },
+          move: {
+            enable: true,
           },
         },
-        {
-          name: "dark",
-          default: {
-            value: true,
-            auto: true,
-            mode: "dark",
-          },
-          options: {
-            background: {
-              color: "#000000",
+        themes: [
+          {
+            name: "light",
+            default: {
+              value: true,
+              auto: true,
+              mode: "light",
             },
-            particles: {
-              color: {
-                value: "#ffffff",
-              },
-              links: {
+            options: {
+              background: {
                 color: "#ffffff",
               },
+              particles: {
+                color: {
+                  value: "#000000",
+                },
+                links: {
+                  color: "#000000",
+                },
+              },
             },
           },
-        },
-      ],
-    }),
-    []
-  );
+          {
+            name: "dark",
+            default: {
+              value: true,
+              auto: true,
+              mode: "dark",
+            },
+            options: {
+              background: {
+                color: "#000000",
+              },
+              particles: {
+                color: {
+                  value: "#ffffff",
+                },
+                links: {
+                  color: "#ffffff",
+                },
+              },
+            },
+          },
+        ],
+      }),
+      []
+    ),
+    lightTheme = useCallback(() => {
+      if (!containerRef.current) {
+        return;
+      }
 
-  const lightTheme = useCallback(() => {
-    if (!containerRef.current) {
-      return;
-    }
+      console.log(containerRef.current);
 
-    console.log(containerRef.current);
+      setTimeout(() => {
+        containerRef.current.loadTheme("light");
+      }, 500);
+    }, [containerRef]),
+    darkTheme = useCallback(() => {
+      if (!containerRef.current) {
+        return;
+      }
 
-    setTimeout(() => {
-      containerRef.current.loadTheme("light");
-    }, 500);
-  }, [containerRef]);
+      console.log(containerRef.current);
 
-  const darkTheme = useCallback(() => {
-    if (!containerRef.current) {
-      return;
-    }
-
-    console.log(containerRef.current);
-
-    setTimeout(() => {
-      containerRef.current.loadTheme("dark");
-    }, 500);
-  }, [containerRef]);
+      setTimeout(() => {
+        containerRef.current.loadTheme("dark");
+      }, 500);
+    }, [containerRef]);
 
   return (
     <div className="App">
@@ -136,7 +126,7 @@ function App() {
           Dark
         </button>
       </header>
-      {init && (
+      {done && (
         <Particles
           id="tsparticles"
           loaded={particlesLoaded}

@@ -1,5 +1,5 @@
-import React, { Component, MutableRefObject, ReactNode } from "react";
-import { tsParticles, type Container } from "@tsparticles/engine";
+import React, { Component, ReactNode } from "react";
+import { tsParticles } from "@tsparticles/engine";
 import type { IParticlesProps } from "./IParticlesProps";
 import type { IParticlesState } from "./IParticlesState";
 import { deepCompare } from "./Utils";
@@ -41,8 +41,8 @@ export default class Particles extends Component<IParticlesProps, IParticlesStat
     }
 
     shouldComponentUpdate(nextProps: Readonly<IParticlesProps>): boolean {
-        const nextOptions = nextProps.options ?? nextProps.params,
-            currentOptions = this.props.options ?? this.props.params;
+        const nextOptions = nextProps.options,
+            currentOptions = this.props.options;
 
         return (
             nextProps.url !== this.props.url ||
@@ -52,7 +52,7 @@ export default class Particles extends Component<IParticlesProps, IParticlesStat
             nextProps.height !== this.props.height ||
             nextProps.width !== this.props.width ||
             !deepCompare(nextProps.style, this.props.style) ||
-            nextProps.loaded !== this.props.loaded ||
+            nextProps.particlesLoaded !== this.props.particlesLoaded ||
             !deepCompare(nextOptions, currentOptions, key => key.startsWith("_"))
         );
     }
@@ -116,19 +116,15 @@ export default class Particles extends Component<IParticlesProps, IParticlesStat
             container = await tsParticles.load({
                 url: this.props.url,
                 id,
-                options: this.props.options ?? this.props.params,
+                options: this.props.options,
             });
-
-        if (this.props.container) {
-            (this.props.container as MutableRefObject<Container | undefined>).current = container;
-        }
 
         this.setState({
             library: container,
         });
 
-        if (this.props.loaded) {
-            await this.props.loaded(container);
+        if (this.props.particlesLoaded) {
+            await this.props.particlesLoaded(container);
         }
     }
 }

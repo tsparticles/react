@@ -3,14 +3,16 @@ import Image from "next/image";
 import Particles, { useParticlesPlugins } from "@tsparticles/react";
 import { loadBigCirclesPreset } from "@tsparticles/preset-big-circles";
 import styles from "../styles/Home.module.css";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { isSsr } from "@tsparticles/engine";
 
 export default function Home() {
-  const [init, setInit] = useState(false);
-  const { done, error } = useParticlesPlugins(async (engine) => {
+  const particlesInitCb = useCallback(async (engine) => {
     await loadBigCirclesPreset(engine);
-  });
+  }, []);
+
+  const [init, setInit] = useState(false);
+  const { done, error } = useParticlesPlugins(particlesInitCb);
 
   if (isSsr() || error || !done) {
     return <></>;
