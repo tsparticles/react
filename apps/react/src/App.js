@@ -7,12 +7,15 @@ import "./App.css";
 function App() {
   const containerRef = useRef(null);
   const [init, setInit] = useState(false);
-
-  useParticlesPlugins(async (engine) => {
+  const { done, error } = useParticlesPlugins(async (engine) => {
     await loadFull(engine);
-  }).then(() => {
-    setInit(true);
   });
+
+  console.log({ error, done, init });
+
+  if ((!error && !done) || !init) {
+    setInit(done);
+  }
 
   const particlesLoaded = useCallback(
     (container) => {
