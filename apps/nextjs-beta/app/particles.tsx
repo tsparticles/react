@@ -4,22 +4,22 @@ import Particles, { useParticlesPlugins } from "@tsparticles/react";
 import configs from "@tsparticles/configs";
 import { useState, useEffect } from "react";
 import { loadFull } from "tsparticles";
+import { isSsr } from "@tsparticles/engine";
 
 export default function ParticlesComponent(props: { id: string }) {
   const [init, setInit] = useState(false);
 
-  useEffect(() => {
-    if (init) {
-      return;
-    }
+  const { done, error } = useParticlesPlugins(async (engine) => {
+    await loadFull(engine);
+  });
 
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    useParticlesPlugins(async (engine) => {
-      await loadFull(engine);
-    }).then(() => {
-      setInit(true);
-    });
-  }, [init]);
+  if (isSsr() || error || !done) {
+    return <></>;
+  }
 
-  return <Particles id={props.id} options={configs.basic} />;
+  if (!init) {
+    setInit(done);
+  }
+
+  return init && <Particles id={props.id} options={configs.basic} />;
 }

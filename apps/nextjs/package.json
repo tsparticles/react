@@ -13,6 +13,7 @@
     "next": "^13.4.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "@tsparticles/engine": "^3.0.0-beta.1",
     "@tsparticles/react": "^3.0.0-beta.1",
     "@tsparticles/engine": "^3.0.0-beta.1",
     "@tsparticles/preset-big-circles": "^3.0.0-beta.1",

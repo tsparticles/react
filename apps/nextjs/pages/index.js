@@ -4,15 +4,21 @@ import Particles, { useParticlesPlugins } from "@tsparticles/react";
 import { loadBigCirclesPreset } from "@tsparticles/preset-big-circles";
 import styles from "../styles/Home.module.css";
 import { useState } from "react";
+import { isSsr } from "@tsparticles/engine";
 
 export default function Home() {
   const [init, setInit] = useState(false);
-
-  useParticlesPlugins(async (engine) => {
+  const { done, error } = useParticlesPlugins(async (engine) => {
     await loadBigCirclesPreset(engine);
-  }).then(() => {
-    setInit(true);
   });
+
+  if (isSsr() || error || !done) {
+    return <></>;
+  }
+
+  if (!init) {
+    setInit(done);
+  }
 
   return (
     <div className={styles.container}>
