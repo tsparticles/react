@@ -18,7 +18,7 @@ try {
     console.log("You can find more samples on CodePen too: https://codepen.io/collection/DPOage");
     console.log("If you need documentation you can find it here: https://particles.js.org");
     console.log(
-        "Remember to leave a star on the tsParticles repository if you like the project and want to support it: https://github.com/matteobruni/tsparticles",
+        "Remember to leave a star on the tsParticles repository if you like the project and want to support it: https://github.com/tsparticles/tsparticles",
     );
 
     const dependencies = pkgSettings.dependencies;
