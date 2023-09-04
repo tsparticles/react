@@ -3,7 +3,6 @@ import Particles from "./Particles";
 import { useEffect, useState } from "react";
 
 export type { IParticlesProps, IParticlesProps as ParticlesProps } from "./IParticlesProps";
-export type { IParticlesState, IParticlesState as ParticlesState } from "./IParticlesState";
 
 export function useParticlesPlugins(cb: (engine: Engine) => Promise<void>): { done: boolean; error: boolean } {
     const [done, setDone] = useState(false),

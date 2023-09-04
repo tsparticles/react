@@ -88,7 +88,7 @@
   "unpkg": "particles.min.js",
   "jsdelivr": "particles.min.js",
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=16.8.0"
   },
   "dependencies": {
     "@tsparticles/engine": "^3.0.0-beta.1"
