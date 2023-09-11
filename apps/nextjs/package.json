@@ -10,17 +10,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^13.4.12",
+    "@tsparticles/engine": "^3.0.0-beta.2",
+    "@tsparticles/react": "workspace:^",
+    "@tsparticles/preset-big-circles": "^3.0.0-beta.1",
+    "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@tsparticles/engine": "^3.0.0-beta.1",
-    "@tsparticles/react": "^3.0.0-beta.1",
-    "@tsparticles/engine": "^3.0.0-beta.1",
-    "@tsparticles/preset-big-circles": "^3.0.0-beta.1",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
-    "eslint": "^8.46.0",
-    "eslint-config-next": "^13.4.12"
+    "eslint": "^8.49.0",
+    "eslint-config-next": "^13.4.19"
   }
 }

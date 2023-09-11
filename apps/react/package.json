@@ -3,15 +3,12 @@
   "version": "3.0.0-beta.1",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^6.0.0",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.4.3",
+    "@tsparticles/engine": "^3.0.0-beta.2",
+    "@tsparticles/react": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@tsparticles/react": "^3.0.0-beta.1",
     "react-scripts": "^5.0.1",
-    "tsparticles": "^3.0.0-beta.1",
-    "@tsparticles/engine": "^3.0.0-beta.1",
+    "tsparticles": "^3.0.0-beta.2",
     "web-vitals": "^3.4.0"
   },
   "scripts": {

@@ -3,24 +3,40 @@ import Image from "next/image";
 import Particles, { useParticlesPlugins } from "@tsparticles/react";
 import { loadBigCirclesPreset } from "@tsparticles/preset-big-circles";
 import styles from "../styles/Home.module.css";
-import { useCallback, useState } from "react";
-import { isSsr } from "@tsparticles/engine";
+import { useCallback, useEffect, useMemo, useState } from "react";
 
 export default function Home() {
   const particlesInitCb = useCallback(async (engine) => {
+    console.log("callback");
+
     await loadBigCirclesPreset(engine);
   }, []);
 
-  const [init, setInit] = useState(false);
-  const { done, error } = useParticlesPlugins(particlesInitCb);
+  const particlesLoaded = useCallback((container) => {
+    console.log("loaded", container);
+  }, []);
 
-  if (isSsr() || error || !done) {
-    return <></>;
-  }
+  const [done, setDone] = useState(false);
 
-  if (!init) {
-    setInit(done);
-  }
+  const pRes = useParticlesPlugins(particlesInitCb);
+
+  useEffect(() => {
+    if (done) {
+      return;
+    }
+
+    setDone(pRes.done);
+  }, [done, pRes.done]);
+
+  const options = useMemo(
+    () => ({
+      preset: "bigCircles",
+      fullScreen: {
+        zIndex: -1,
+      },
+    }),
+    []
+  );
 
   return (
     <div className={styles.container}>
@@ -83,15 +99,11 @@ export default function Home() {
           </span>
         </a>
       </footer>
-      {init && (
+      {done && (
         <Particles
           id="tsparticles"
-          options={{
-            preset: "bigCircles",
-            fullScreen: {
-              zIndex: -1,
-            },
-          }}
+          options={options}
+          particlesLoaded={particlesLoaded}
         />
       )}
     </div>

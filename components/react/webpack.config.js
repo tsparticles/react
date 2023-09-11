@@ -13,7 +13,7 @@ v${version}`;
 
 const minBanner = `React tsParticles v${version} by Matteo Bruni`;
 
-const getConfig = (entry) => {
+const getConfig = entry => {
     const reportFileName = "report";
 
     return {
@@ -24,45 +24,55 @@ const getConfig = (entry) => {
             libraryTarget: "umd",
             library: "Particles",
             globalObject: "this",
-            chunkFilename: '[name].js',
+            chunkFilename: "[name].js",
         },
         resolve: {
-            extensions: [ ".js", ".json" ]
+            extensions: [".js", ".json"],
         },
-        externals: [ {
-            "@tsparticles/engine": {
-                commonjs: "@tsparticles/engine",
-                commonjs2: "@tsparticles/engine",
-                amd: "@tsparticles/engine",
-                root: "window"
-            }
-        } ],
+        externals: [
+            {
+                react: {
+                    commonjs: "react",
+                    commonjs2: "react",
+                    amd: "react",
+                    root: "React",
+                },
+            },
+            {
+                "@tsparticles/engine": {
+                    commonjs: "@tsparticles/engine",
+                    commonjs2: "@tsparticles/engine",
+                    amd: "@tsparticles/engine",
+                    root: "window",
+                },
+            },
+        ],
         module: {
             rules: [
                 {
                     // Include ts, tsx, js, and jsx files.
                     test: /\.js$/,
                     exclude: /node_modules/,
-                    loader: "babel-loader"
-                }
-            ]
+                    loader: "babel-loader",
+                },
+            ],
         },
         plugins: [
             new webpack.BannerPlugin({
                 banner,
-                exclude: /\.min\.js$/
+                exclude: /\.min\.js$/,
             }),
             new webpack.BannerPlugin({
                 banner: minBanner,
-                include: /\.min\.js$/
+                include: /\.min\.js$/,
             }),
             new webpack.ProgressPlugin(),
             new BundleAnalyzerPlugin({
                 openAnalyzer: false,
                 analyzerMode: "static",
                 exclude: /\.min\.js$/,
-                reportFilename: `${reportFileName}.html`
-            })
+                reportFilename: `${reportFileName}.html`,
+            }),
         ],
         optimization: {
             minimize: true,
@@ -71,10 +81,10 @@ const getConfig = (entry) => {
                     include: /\.min\.js$/,
                     terserOptions: {
                         output: {
-                            comments: minBanner
-                        }
+                            comments: minBanner,
+                        },
                     },
-                    extractComments: false
+                    extractComments: false,
                 }),
                 new TerserPlugin({
                     exclude: /\.min\.js$/,
@@ -84,22 +94,22 @@ const getConfig = (entry) => {
                             beautify: true,
                             indent_level: 2,
                             semicolons: false,
-                            comments: banner
+                            comments: banner,
                         },
                         mangle: false,
                         keep_classnames: true,
                         keep_fnames: true,
                     },
-                    extractComments: false
-                })
-            ]
-        }
+                    extractComments: false,
+                }),
+            ],
+        },
     };
 };
 
 module.exports = [
     getConfig({
-        "particles": "./dist/browser/index.js",
-        "particles.min": "./dist/browser/index.js"
-    })
+        particles: "./dist/browser/index.js",
+        "particles.min": "./dist/browser/index.js",
+    }),
 ];

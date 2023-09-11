@@ -1,5 +1,5 @@
 {
-  "name": "@tsparticles/react",
+  "name": "@tsparticles/react-old",
   "version": "3.0.0-beta.1",
   "description": "Official tsParticles React Component - Easily create highly customizable particle, confetti and fireworks animations and use them as animated backgrounds for your website. Ready to use components available also for Web Components, Vue.js (2.x and 3.x), Angular, Svelte, jQuery, Preact, Riot.js, Solid.js, Inferno.",
   "scripts": {
@@ -111,33 +111,33 @@
   "prettier": "@tsparticles/prettier-config",
   "dependencies": {
     "react": "^18.2.0",
-    "@tsparticles/engine": "^3.0.0-beta.1"
+    "@tsparticles/engine": "^3.0.0-beta.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.9",
-    "@babel/plugin-transform-runtime": "^7.22.9",
-    "@babel/preset-env": "^7.22.9",
-    "@babel/runtime": "^7.22.6",
+    "@babel/core": "^7.22.17",
+    "@babel/plugin-transform-runtime": "^7.22.15",
+    "@babel/preset-env": "^7.22.15",
+    "@babel/runtime": "^7.22.15",
     "@tsparticles/prettier-config": "^1.12.0",
-    "@types/node": "^20.4.7",
-    "@types/react": "^18.2.18",
+    "@types/node": "^20.6.0",
+    "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^6.2.1",
-    "@typescript-eslint/parser": "^6.2.1",
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
     "babel-loader": "^9.1.3",
     "cross-env": "^7.0.3",
-    "eslint": "^8.46.0",
+    "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
-    "prettier": "^3.0.1",
+    "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.1",
     "terser-webpack-plugin": "^5.3.9",
     "ts-loader": "^9.4.4",
     "ts-node": "^10.9.1",
-    "typescript": "^5.1.6",
+    "typescript": "^5.2.2",
     "webpack": "^5.88.2",
-    "webpack-bundle-analyzer": "^4.9.0",
+    "webpack-bundle-analyzer": "^4.9.1",
     "webpack-cli": "^5.1.4",
     "webpack-node-externals": "^3.0.0"
   }
