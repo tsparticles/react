@@ -7,8 +7,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@commitlint/cli": "^17.6.7",
-    "@commitlint/config-conventional": "^17.6.7",
+    "@commitlint/cli": "^18.0.0",
+    "@commitlint/config-conventional": "^18.0.0",
     "@parcel/core": "^2.9.3",
     "@parcel/transformer-sass": "^2.9.3",
     "husky": "^8.0.3",
