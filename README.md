@@ -68,7 +68,7 @@ const App = () => {
     }, []);
 
     const particlesLoaded = useCallback(async container => {
-        await console.log(container);
+        console.log(container);
     }, []);
 
     return (
@@ -98,7 +98,7 @@ const App = () => {
     }, []);
 
     const particlesLoaded = useCallback(async (container: Container | undefined) => {
-        await console.log(container);
+        console.log(container);
     }, []);
 
     return (
@@ -128,7 +128,7 @@ const App = () => {
     }, []);
 
     const particlesLoaded = useCallback(async container => {
-        await console.log(container);
+        console.log(container);
     }, []);
 
     return (
@@ -231,7 +231,7 @@ const App = () => {
     }, []);
 
     const particlesLoaded = useCallback(async (container: Container | undefined) => {
-        await console.log(container);
+        console.log(container);
     }, []);
     return (
         <Particles
