@@ -7,10 +7,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@commitlint/cli": "^17.7.1",
-    "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/cli": "^18.4.2",
+    "@commitlint/config-conventional": "^18.4.2",
     "husky": "^8.0.3",
-    "lerna": "^7.2.0",
+    "lerna": "^7.4.2",
     "process": "^0.11.10",
     "react-error-overlay": "^6.0.11"
   },

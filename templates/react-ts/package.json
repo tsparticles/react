@@ -95,8 +95,8 @@
     "@types/react-dom": "^18.2.7",
     "@tsparticles/react": "^3.0.0-beta.1",
     "tslib": "^2.6.2",
-    "tsparticles": "^3.0.0-beta.2",
-    "@tsparticles/engine": "^3.0.0-beta.2",
+    "tsparticles": "^3.0.0-beta.4",
+    "@tsparticles/engine": "^3.0.0-beta.4",
     "typescript": "^5.2.2",
     "web-vitals": "^3.4.0"
   },
