@@ -88,11 +88,11 @@
   "dependencies": {
     "@tsparticles/react": "^3.0.0-beta.1",
     "tslib": "^2.6.2",
-    "tsparticles": "^3.0.0-beta.4",
-    "@tsparticles/engine": "^3.0.0-beta.4"
+    "tsparticles": "^3.0.0",
+    "@tsparticles/engine": "^3.0.0"
   },
   "devDependencies": {
-    "fs-extra": "^11.1.1"
+    "fs-extra": "^11.2.0"
   },
   "scripts": {
     "build": "node scripts/prebuild.js",
