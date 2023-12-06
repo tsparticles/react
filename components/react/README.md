@@ -70,7 +70,7 @@ const App = () => {
         initParticlesEngine(initParticlesCb).then(() => {
             setInit(true);
         });
-    }, []);
+    }, [initParticlesCb]);
 
     const particlesLoaded = useCallback(async (container) => {
         await console.log(container);
@@ -176,7 +176,7 @@ const App = () => {
         initParticlesEngine(initParticlesCb).then(() => {
             setInit(true);
         });
-    }, []);
+    }, [initParticlesCb]);
 
     const particlesLoaded = useCallback(async (container: Container) => {
         await console.log(container);
@@ -283,7 +283,7 @@ const App = () => {
         initParticlesEngine(initParticlesCb).then(() => {
             setInit(true);
         });
-    }, []);
+    }, [initParticlesCb]);
 
     const particlesLoaded = useCallback(async (container) => {
         await console.log(container);
@@ -317,7 +317,7 @@ const App = () => {
         initParticlesEngine(initParticlesCb).then(() => {
             setInit(true);
         });
-    }, []);
+    }, [initParticlesCb]);
 
     const particlesLoaded = useCallback(async (container: Container) => {
         await console.log(container);

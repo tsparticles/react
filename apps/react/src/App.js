@@ -14,7 +14,7 @@ function App() {
         initParticlesEngine(initParticlesCb).then(() => {
             setInit(true);
         });
-    }, []);
+    }, [ initParticlesCb ]);
 
     const particlesLoaded = useCallback(
             (container) => {
