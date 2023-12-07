@@ -1,14 +1,30 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
-import Particles from './particles'
+"use client";
 
-const inter = Inter({ subsets: [ 'latin' ] })
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import styles from "./page.module.css";
+import Particles from "./particles";
+import { useEffect, useState } from "react";
+import { initParticlesEngine } from "@tsparticles/react";
+import { loadFull } from "tsparticles";
+import { Engine } from "@tsparticles/engine";
+
+const inter = Inter({ subsets: [ "latin" ] });
 
 export default function Home() {
+    const [ init, setInit ] = useState(false);
+
+    useEffect(() => {
+        initParticlesEngine(async (engine: Engine) => {
+            await loadFull(engine);
+        }).then(() => {
+            setInit(true);
+        });
+    }, []);
+
     return (
         <main className={styles.main}>
-            <Particles id="tsparticles" />
+            <Particles id="tsparticles" done={init}/>
             <div className={styles.description}>
                 <p>
                     Get started by editing&nbsp;
@@ -20,7 +36,7 @@ export default function Home() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        By{' '}
+                        By{" "}
                         <Image
                             src="/vercel.svg"
                             alt="Vercel Logo"
@@ -89,5 +105,5 @@ export default function Home() {
                 </a>
             </div>
         </main>
-    )
+    );
 }

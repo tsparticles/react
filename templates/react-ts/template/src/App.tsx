@@ -1,27 +1,38 @@
-import React, { useCallback } from "react";
-import Particles from "react-particles";
-import type { Engine } from "tsparticles-engine";
+import React, { useCallback, useEffect, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import type { Engine } from "@tsparticles/engine";
 import { loadFull } from "tsparticles";
 import logo from "./logo.svg";
-import './App.css';
+import "./App.css";
 import particlesOptions from "./particles.json";
-import { ISourceOptions } from "tsparticles-engine";
+import { ISourceOptions } from "@tsparticles/engine";
 
 function App() {
-    const particlesInit = useCallback(async (engine: Engine) => {
-        await loadFull(engine);
+    const [ init, setInit ] = useState(false);
+
+    useEffect(() => {
+        initParticlesEngine(async (engine) => {
+            await loadFull(engine);
+        }).then(() => {
+            setInit(true);
+        });
     }, []);
 
     return (
         <div className="App">
-            <Particles options={particlesOptions as ISourceOptions} init={particlesInit}/>
+            {init && (
+                <Particles
+                    options={particlesOptions as ISourceOptions}
+                />
+            )}
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo"/>
                 <p>
                     Edit <code>src/App.tsx</code> and save to reload.
                 </p>
                 <p>
-                    Edit <code>src/particles.json</code> to customize Particles, then save to reload.
+                    Edit <code>src/particles.json</code> to customize Particles, then save
+                    to reload.
                 </p>
                 <a
                     className="App-link"

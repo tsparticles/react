@@ -1,10 +1,10 @@
 [![banner](https://particles.js.org/images/banner3.png)](https://particles.js.org)
 
-# react-particles
+# @tsparticles/react
 
-[![npm](https://img.shields.io/npm/v/react-particles)](https://www.npmjs.com/package/react-particles) [![npm](https://img.shields.io/npm/dm/react-particles)](https://www.npmjs.com/package/react-particles) [![GitHub Sponsors](https://img.shields.io/github/sponsors/matteobruni)](https://github.com/sponsors/matteobruni)
+[![npm](https://img.shields.io/npm/v/@tsparticles/react)](https://www.npmjs.com/package/@tsparticles/react) [![npm](https://img.shields.io/npm/dm/@tsparticles/react)](https://www.npmjs.com/package/@tsparticles/react) [![GitHub Sponsors](https://img.shields.io/github/sponsors/matteobruni)](https://github.com/sponsors/matteobruni)
 
-Official [tsParticles](https://github.com/matteobruni/tsparticles) ReactJS component
+Official [tsParticles](https://github.com/tsparticles/tsparticles) ReactJS component
 
 [![Slack](https://particles.js.org/images/slack.png)](https://join.slack.com/t/tsparticles/shared_invite/enQtOTcxNTQxNjQ4NzkxLWE2MTZhZWExMWRmOWI5MTMxNjczOGE1Yjk0MjViYjdkYTUzODM3OTc5MGQ5MjFlODc4MzE0N2Q1OWQxZDc1YzI) [![Discord](https://particles.js.org/images/discord.png)](https://discord.gg/hACwv45Hme) [![Telegram](https://particles.js.org/images/telegram.png)](https://t.me/tsparticles)
 
@@ -13,13 +13,13 @@ Official [tsParticles](https://github.com/matteobruni/tsparticles) ReactJS compo
 ## Installation
 
 ```shell
-npm install react-particles
+npm install @tsparticles/react
 ```
 
 or
 
 ```shell
-yarn add react-particles
+yarn add @tsparticles/react
 ```
 
 ### create-react-app
@@ -53,9 +53,9 @@ Examples:
 
 ```jsx
 import { useCallback } from "react";
-import Particles from "react-particles";
+import Particles from "@tsparticles/react";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 
 const App = () => {
     const particlesInit = useCallback(async engine => {
@@ -81,10 +81,10 @@ const App = () => {
 
 ```typescript jsx
 import { useCallback } from "react";
-import Particles from "react-particles";
-import type { Container, Engine } from "tsparticles-engine";
+import Particles from "@tsparticles/react";
+import type { Container, Engine } from "@tsparticles/engine";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 
 const App = () => {
     const particlesInit = useCallback(async (engine: Engine) => {
@@ -113,9 +113,9 @@ const App = () => {
 
 ```jsx
 import { useCallback } from "react";
-import Particles from "react-particles";
+import Particles from "@tsparticles/react";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 
 const App = () => {
     const particlesInit = useCallback(async engine => {
@@ -214,10 +214,10 @@ const App = () => {
 
 ```typescript jsx
 import { useCallback } from "react";
-import type { Container, Engine } from "tsparticles-engine";
-import Particles from "react-particles";
+import type { Container, Engine } from "@tsparticles/engine";
+import Particles from "@tsparticles/react";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 
 const App = () => {
     const particlesInit = useCallback(async (engine: Engine) => {
@@ -332,7 +332,7 @@ const App = () => {
 
 Find all configuration options [here](https://particles.js.org/docs/interfaces/tsParticles_Engine.Options_Interfaces_IOptions.IOptions.html).
 
-You can find sample configurations [here](https://github.com/matteobruni/tsparticles/tree/main/utils/configs/src) 📖
+You can find sample configurations [here](https://github.com/tsparticles/tsparticles/tree/main/utils/configs/src) 📖
 
 ## Demos
 
@@ -340,6 +340,6 @@ Preset demos can be found [here](https://particles.js.org/samples/presets/index.
 
 There's also a CodePen collection actively maintained and updated [here](https://codepen.io/collection/DPOage)
 
-Report bugs and issues [here](https://github.com/matteobruni/tsparticles/issues)
+Report bugs and issues [here](https://github.com/tsparticles/tsparticles/issues)
 
 [tsParticle Website](https://particles.js.org)

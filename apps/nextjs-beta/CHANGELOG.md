@@ -3,7 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [2.12.2](https://github.com/tsparticles/react/compare/v2.12.1...v2.12.2) (2023-08-11)
+# [3.0.0](https://github.com/tsparticles/react/compare/v2.12.2...v3.0.0) (2023-12-07)
+
+
+### Bug Fixes
+
+* fixed component, it was refreshing infinite times for a bug. now it works perfectly ([4ef5e81](https://github.com/tsparticles/react/commit/4ef5e8197f1364e3a62c8262ae04c9272457047a))
+
+
+### Features
+
+* added particles setup function (name not definitive), updated to v3 ([e164c66](https://github.com/tsparticles/react/commit/e164c669b515d30057059ef8f7a8d35ff562b5e3))
+
+
+
+
+
+## [3.0.0-beta.1](https://github.com/tsparticles/react/compare/v2.12.1...v3.0.0-beta.1) (2023-08-11)
 
 **Note:** Version bump only for package nextjs-beta-demo
 
@@ -11,7 +27,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [2.12.1](https://github.com/tsparticles/react/compare/v2.12.0...v2.12.1) (2023-08-04)
+## [2.12.1](https://github.com/tsparticles/react/compare/v3.0.0-beta.1...v2.12.1) (2023-08-04)
 
 **Note:** Version bump only for package nextjs-beta-demo
 
@@ -19,7 +35,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [2.12.0](https://github.com/tsparticles/react/compare/v2.11.0...v2.12.0) (2023-08-04)
+# [3.0.0-beta.1](https://github.com/tsparticles/react/compare/v2.11.0...v3.0.0-beta.1) (2023-08-04)
 
 **Note:** Version bump only for package nextjs-beta-demo
 
@@ -53,23 +69,23 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [0.3.3](https://github.com/matteobruni/tsparticles/compare/nextjs-beta-demo@0.3.2...nextjs-beta-demo@0.3.3) (2023-02-12)
+## [0.3.3](https://github.com/tsparticles/tsparticles/compare/nextjs-beta-demo@0.3.2...nextjs-beta-demo@0.3.3) (2023-02-12)
 
 **Note:** Version bump only for package nextjs-beta-demo
 
-## [0.3.2](https://github.com/matteobruni/tsparticles/compare/nextjs-beta-demo@0.3.1...nextjs-beta-demo@0.3.2) (2023-02-12)
+## [0.3.2](https://github.com/tsparticles/tsparticles/compare/nextjs-beta-demo@0.3.1...nextjs-beta-demo@0.3.2) (2023-02-12)
 
 **Note:** Version bump only for package nextjs-beta-demo
 
-## [0.3.1](https://github.com/matteobruni/tsparticles/compare/nextjs-beta-demo@0.3.0...nextjs-beta-demo@0.3.1) (2023-02-11)
+## [0.3.1](https://github.com/tsparticles/tsparticles/compare/nextjs-beta-demo@0.3.0...nextjs-beta-demo@0.3.1) (2023-02-11)
 
 **Note:** Version bump only for package nextjs-beta-demo
 
-# [0.3.0](https://github.com/matteobruni/tsparticles/compare/nextjs-beta-demo@0.2.0...nextjs-beta-demo@0.3.0) (2023-02-10)
+# [0.3.0](https://github.com/tsparticles/tsparticles/compare/nextjs-beta-demo@0.2.0...nextjs-beta-demo@0.3.0) (2023-02-10)
 
 **Note:** Version bump only for package nextjs-beta-demo
 
-# [0.2.0](https://github.com/matteobruni/tsparticles/compare/nextjs-beta-demo@0.1.1...nextjs-beta-demo@0.2.0) (2023-01-18)
+# [0.2.0](https://github.com/tsparticles/tsparticles/compare/nextjs-beta-demo@0.1.1...nextjs-beta-demo@0.2.0) (2023-01-18)
 
 **Note:** Version bump only for package nextjs-beta-demo
 

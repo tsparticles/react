@@ -1,6 +1,6 @@
 {
   "name": "nextjs",
-  "version": "2.12.2",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,16 +10,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^13.4.12",
+    "@tsparticles/engine": "^3.0.2",
+    "@tsparticles/preset-big-circles": "^3.0.0",
+    "@tsparticles/react": "workspace:^",
+    "next": "^14.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-particles": "^2.12.2",
-    "tsparticles-engine": "^2.12.0",
-    "tsparticles-preset-big-circles": "^2.12.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "eslint": "^8.46.0",
-    "eslint-config-next": "^13.4.12"
+    "eslint": "^8.55.0",
+    "eslint-config-next": "^14.0.3"
   }
 }

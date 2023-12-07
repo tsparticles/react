@@ -1,10 +1,10 @@
 [![banner](https://particles.js.org/images/banner3.png)](https://particles.js.org)
 
-# react-particles
+# @tsparticles/react
 
-[![npm](https://img.shields.io/npm/v/react-particles)](https://www.npmjs.com/package/react-particles) [![npm](https://img.shields.io/npm/dm/react-particles)](https://www.npmjs.com/package/react-particles) [![GitHub Sponsors](https://img.shields.io/github/sponsors/matteobruni)](https://github.com/sponsors/matteobruni)
+[![npm](https://img.shields.io/npm/v/@tsparticles/react)](https://www.npmjs.com/package/@tsparticles/react) [![npm](https://img.shields.io/npm/dm/@tsparticles/react)](https://www.npmjs.com/package/@tsparticles/react) [![GitHub Sponsors](https://img.shields.io/github/sponsors/matteobruni)](https://github.com/sponsors/matteobruni)
 
-Official [tsParticles](https://github.com/matteobruni/tsparticles) ReactJS component
+Official [tsParticles](https://github.com/tsparticles/tsparticles) ReactJS component
 
 [![Slack](https://particles.js.org/images/slack.png)](https://join.slack.com/t/tsparticles/shared_invite/enQtOTcxNTQxNjQ4NzkxLWE2MTZhZWExMWRmOWI5MTMxNjczOGE1Yjk0MjViYjdkYTUzODM3OTc5MGQ5MjFlODc4MzE0N2Q1OWQxZDc1YzI) [![Discord](https://particles.js.org/images/discord.png)](https://discord.gg/hACwv45Hme) [![Telegram](https://particles.js.org/images/telegram.png)](https://t.me/tsparticles)
 
@@ -13,21 +13,35 @@ Official [tsParticles](https://github.com/matteobruni/tsparticles) ReactJS compo
 ## Installation
 
 ```shell
-npm install react-particles
+npm install @tsparticles/react
 ```
 
 or
 
 ```shell
-yarn add react-particles
+yarn add @tsparticles/react
 ```
+
+### TypeScript Installation
+
+```shell
+npm install @tsparticles/react @tsparticles/engine
+```
+
+or
+
+```shell
+yarn add @tsparticles/react @tsparticles/engine
+```
+
+[@tsparticles/engine](https://npmjs.com/package/@tsparticles/engine) is the core package for [tsParticles](https://particles.js.org), it contains useful types like `ISourceOptions`, `Engine` or `Container`.
 
 ### create-react-app
 
 Starting from version 1.17.0 there are two official `create-react-app` templates:
 
--   `cra-template-particles`: Simple ReactJS template with full screen particles, using JavaScript
--   `cra-template-particles-typescript`: Simple ReactJS template with full screen particles, using TypeScript
+- `cra-template-particles`: Simple ReactJS template with full screen particles, using JavaScript
+- `cra-template-particles-typescript`: Simple ReactJS template with full screen particles, using TypeScript
 
 You can simply install them using the `create-react-app` command like this:
 
@@ -47,95 +61,44 @@ $ create-react-app your_app --template particles-typescript
 
 Examples:
 
-#### Remote url
-
-##### JavaScript support - url
-
-```jsx
-import { useCallback } from "react";
-import Particles from "react-particles";
-//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
-
-const App = () => {
-    const particlesInit = useCallback(async engine => {
-        console.log(engine);
-        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
-        //await loadFull(engine);
-        await loadSlim(engine);
-    }, []);
-
-    const particlesLoaded = useCallback(async container => {
-        await console.log(container);
-    }, []);
-
-    return (
-        <Particles id="tsparticles" url="http://foo.bar/particles.json" init={particlesInit} loaded={particlesLoaded} />
-    );
-};
-```
-
-##### TypeScript support - url
-
-```typescript jsx
-import { useCallback } from "react";
-import Particles from "react-particles";
-import type { Container, Engine } from "tsparticles-engine";
-//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
-
-const App = () => {
-    const particlesInit = useCallback(async (engine: Engine) => {
-        console.log(engine);
-
-        // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
-        //await loadFull(engine);
-        await loadSlim(engine);
-    }, []);
-
-    const particlesLoaded = useCallback(async (container: Container | undefined) => {
-        await console.log(container);
-    }, []);
-
-    return (
-        <Particles id="tsparticles" url="http://foo.bar/particles.json" init={particlesInit} loaded={particlesLoaded} />
-    );
-};
-```
-
 #### Options object
 
 ##### JavaScript support - object
 
 ```jsx
-import { useCallback } from "react";
-import Particles from "react-particles";
-//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { useCallback, useEffect, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+// import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
+// import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
+import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+// import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
 const App = () => {
-    const particlesInit = useCallback(async engine => {
-        console.log(engine);
-        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
-        //await loadFull(engine);
-        await loadSlim(engine);
+    const [ init, setInit ] = useState(false);
+
+    // this should be run only once per application lifetime
+    useEffect(() => {
+        initParticlesEngine(async (engine) => {
+            // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+            // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+            // starting from v2 you can add only the features you need reducing the bundle size
+            //await loadAll(engine);
+            //await loadFull(engine);
+            await loadSlim(engine);
+            //await loadBasic(engine);
+        }).then(() => {
+            setInit(true);
+        });
     }, []);
 
-    const particlesLoaded = useCallback(async container => {
-        await console.log(container);
-    }, []);
+    const particlesLoaded = (container) => {
+        console.log(container);
+    };
 
     return (
-        <Particles
+        { init && <Particles
             id="tsparticles"
-            init={particlesInit}
-            loaded={particlesLoaded}
+            particlesLoaded={particlesLoaded}
             options={{
                 background: {
                     color: {
@@ -206,38 +169,49 @@ const App = () => {
                 detectRetina: true,
             }}
         />
-    );
+}
+)
+    ;
 };
 ```
 
 ##### TypeScript support - object
 
-```typescript jsx
-import { useCallback } from "react";
-import type { Container, Engine } from "tsparticles-engine";
-import Particles from "react-particles";
-//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+```tsx
+import { useCallback, useEffect, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import type { Container, Engine } from "@tsparticles/engine";
+// import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
+// import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
+import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+// import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
 const App = () => {
-    const particlesInit = useCallback(async (engine: Engine) => {
-        console.log(engine);
+    const [ init, setInit ] = useState(false);
 
-        // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
-        //await loadFull(engine);
-        await loadSlim(engine);
+    // this should be run only once per application lifetime
+    useEffect(() => {
+        initParticlesEngine(async (engine) => {
+            // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+            // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+            // starting from v2 you can add only the features you need reducing the bundle size
+            //await loadAll(engine);
+            //await loadFull(engine);
+            await loadSlim(engine);
+            //await loadBasic(engine);
+        }).then(() => {
+            setInit(true);
+        });
     }, []);
 
-    const particlesLoaded = useCallback(async (container: Container | undefined) => {
-        await console.log(container);
-    }, []);
+    const particlesLoaded = (container) => {
+        console.log(container);
+    };
+
     return (
-        <Particles
+        { init && <Particles
             id="tsparticles"
-            init={particlesInit}
-            loaded={particlesLoaded}
+            particlesLoaded={particlesLoaded}
             options={{
                 background: {
                     color: {
@@ -308,31 +282,113 @@ const App = () => {
                 detectRetina: true,
             }}
         />
-    );
+}
+)
+    ;
+};
+```
+
+#### Remote url
+
+##### JavaScript support - url
+
+```jsx
+import { useCallback, useEffect, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+// import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
+// import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
+import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+// import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
+
+const App = () => {
+    const [ init, setInit ] = useState(false);
+
+    // this should be run only once per application lifetime
+    useEffect(() => {
+        initParticlesEngine(async (engine) => {
+            // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+            // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+            // starting from v2 you can add only the features you need reducing the bundle size
+            //await loadAll(engine);
+            //await loadFull(engine);
+            await loadSlim(engine);
+            //await loadBasic(engine);
+        }).then(() => {
+            setInit(true);
+        });
+    }, []);
+
+    const particlesLoaded = (container) => {
+        console.log(container);
+    };
+
+    return (
+        { init && <Particles id="tsparticles" url="http://foo.bar/particles.json" particlesLoaded={particlesLoaded}/>
+}
+)
+    ;
+};
+```
+
+##### TypeScript support - url
+
+```tsx
+import { useCallback, useEffect, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import type { Container, Engine } from "@tsparticles/engine";
+// import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
+// import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
+import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+// import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
+
+const App = () => {
+    const [ init, setInit ] = useState(false);
+
+    // this should be run only once per application lifetime
+    useEffect(() => {
+        initParticlesEngine(async (engine) => {
+            // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+            // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+            // starting from v2 you can add only the features you need reducing the bundle size
+            //await loadAll(engine);
+            //await loadFull(engine);
+            await loadSlim(engine);
+            //await loadBasic(engine);
+        }).then(() => {
+            setInit(true);
+        });
+    }, []);
+
+    const particlesLoaded = (container) => {
+        console.log(container);
+    };
+
+    return (
+        { init && <Particles id="tsparticles" url="http://foo.bar/particles.json" particlesLoaded={particlesLoaded}/>
+}
+)
+    ;
 };
 ```
 
 ### Props
 
-| Prop            | Type     | Definition                                                                                                                                          |
-| --------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id              | string   | The id of the element.                                                                                                                              |
-| width           | string   | The width of the canvas.                                                                                                                            |
-| height          | string   | The height of the canvas.                                                                                                                           |
-| options         | object   | The options of the particles instance.                                                                                                              |
-| url             | string   | The remote options url, called using an AJAX request                                                                                                |
-| style           | object   | The style of the canvas element.                                                                                                                    |
-| className       | string   | The class name of the canvas wrapper.                                                                                                               |
-| canvasClassName | string   | the class name of the canvas.                                                                                                                       |
-| container       | object   | The instance of the [particles container](https://particles.js.org/docs/classes/tsParticles_Engine.Core_Container.Container.html)                   |
-| init            | function | This function is called after the tsParticles instance initialization, the instance is the parameter and you can load custom presets or shapes here |
-| loaded          | function | This function is called when particles are correctly loaded in canvas, the current container is the parameter and you can customize it here         |
+| Prop      | Type   | Definition                                           |
+|-----------|--------|------------------------------------------------------|
+| id        | string | The id of the element.                               |
+| width     | string | The width of the canvas.                             |
+| height    | string | The height of the canvas.                            |
+| options   | object | The options of the particles instance.               |
+| url       | string | The remote options url, called using an AJAX request |
+| style     | object | The style of the canvas element.                     |
+| className | string | The class name of the canvas wrapper.                |
 
 #### particles.json
 
-Find all configuration options [here](https://particles.js.org/docs/interfaces/tsParticles_Engine.Options_Interfaces_IOptions.IOptions.html).
+Find all configuration
+options [here](https://particles.js.org/docs/interfaces/tsParticles_Engine.Options_Interfaces_IOptions.IOptions.html).
 
-You can find sample configurations [here](https://github.com/matteobruni/tsparticles/tree/main/utils/configs/src) 📖
+You can find sample configurations [here](https://github.com/tsparticles/tsparticles/tree/main/utils/configs/src) 📖
 
 ## Demos
 
@@ -340,6 +396,6 @@ Preset demos can be found [here](https://particles.js.org/samples/presets/index.
 
 There's also a CodePen collection actively maintained and updated [here](https://codepen.io/collection/DPOage)
 
-Report bugs and issues [here](https://github.com/matteobruni/tsparticles/issues)
+Report bugs and issues [here](https://github.com/tsparticles/tsparticles/issues)
 
 [tsParticle Website](https://particles.js.org)

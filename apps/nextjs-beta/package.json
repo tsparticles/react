@@ -1,27 +1,28 @@
 {
   "name": "nextjs-beta-demo",
-  "version": "2.12.2",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:ci": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "^13.4.12",
-    "@types/node": "^20.4.7",
-    "@types/react": "^18.2.18",
-    "@types/react-dom": "^18.2.7",
-    "eslint": "^8.46.0",
-    "eslint-config-next": "^13.4.12",
-    "next": "^13.4.12",
+    "@next/font": "^14.0.3",
+    "@tsparticles/configs": "^3.0.2",
+    "@tsparticles/engine": "^3.0.2",
+    "@tsparticles/react": "workspace:^",
+    "@types/node": "^20.10.4",
+    "@types/react": "^18.2.42",
+    "@types/react-dom": "^18.2.17",
+    "eslint": "^8.55.0",
+    "eslint-config-next": "^14.0.3",
+    "next": "^14.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-particles": "^2.12.2",
-    "tsparticles": "^2.12.0",
-    "tsparticles-demo-configs": "^2.12.0",
-    "tsparticles-engine": "^2.12.0",
-    "typescript": "^5.1.6"
+    "tsparticles": "^3.0.2",
+    "typescript": "^5.3.3"
   }
 }

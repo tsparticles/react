@@ -1,15 +1,11 @@
 "use client";
 
-import { loadFull } from "tsparticles";
-import Particles from "react-particles";
-import { useCallback } from "react";
-import { Engine } from "tsparticles-engine";
-import configs from "tsparticles-demo-configs";
+import Particles from "@tsparticles/react";
+import configs from "@tsparticles/configs";
 
-export default function ParticlesComponent(props: { id: string }) {
-    const particlesInit = useCallback(async (engine: Engine) => {
-        await loadFull(engine);
-    }, []);
-
-    return <Particles id={props.id} init={particlesInit} options={configs.basic} />;
-};
+export default function ParticlesComponent(props: {
+    id: string;
+    done: boolean;
+}) {
+    return props.done && <Particles id={props.id} options={configs.basic}/>;
+}

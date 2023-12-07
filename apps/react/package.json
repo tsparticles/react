@@ -1,22 +1,20 @@
 {
   "name": "react-demo",
-  "version": "2.12.2",
+  "version": "3.0.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^6.0.0",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.4.3",
+    "@tsparticles/engine": "^3.0.2",
+    "@tsparticles/react": "workspace:^",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-particles": "^2.12.2",
     "react-scripts": "^5.0.1",
-    "tsparticles": "^2.12.0",
-    "tsparticles-engine": "^2.12.0",
-    "web-vitals": "^3.4.0"
+    "tsparticles": "^3.0.2",
+    "web-vitals": "^3.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:ci": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
