@@ -5,16 +5,19 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-    const containerRef = useRef(null),
-        initParticlesCb = useCallback(async (engine) => {
-            await loadFull(engine);
-        }, []), [ init, setInit ] = useState(false);
+    const containerRef = useRef(null), [ init, setInit ] = useState(false);
 
     useEffect(() => {
-        initParticlesEngine(initParticlesCb).then(() => {
+        if (init) {
+            return;
+        }
+
+        initParticlesEngine(async (engine) => {
+            await loadFull(engine);
+        }).then(() => {
             setInit(true);
         });
-    }, [ initParticlesCb ]);
+    }, [ init ]);
 
     const particlesLoaded = useCallback(
             (container) => {
@@ -87,28 +90,12 @@ function App() {
             }),
             []
         ),
-        lightTheme = useCallback(() => {
-            if (!containerRef.current) {
-                return;
-            }
-
-            console.log(containerRef.current);
-
-            setTimeout(() => {
-                containerRef.current.loadTheme("light");
-            }, 500);
-        }, [ containerRef ]),
-        darkTheme = useCallback(() => {
-            if (!containerRef.current) {
-                return;
-            }
-
-            console.log(containerRef.current);
-
-            setTimeout(() => {
-                containerRef.current.loadTheme("dark");
-            }, 500);
-        }, [ containerRef ]);
+        lightTheme = () => {
+            containerRef.current?.loadTheme("light");
+        },
+        darkTheme = () => {
+            containerRef.current?.loadTheme("dark");
+        };
 
     return (
         <div className="App">
@@ -135,7 +122,7 @@ function App() {
             {init && (
                 <Particles
                     id="tsparticles"
-                    loaded={particlesLoaded}
+                    particlesLoaded={particlesLoaded}
                     options={options}
                 />
             )}

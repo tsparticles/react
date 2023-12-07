@@ -1,18 +1,17 @@
-import React, { useEffect } from "react";
+import { FC, useEffect } from "react";
 import type { IParticlesProps } from "./IParticlesProps";
 import { tsParticles, type Container } from "@tsparticles/engine";
 
-function Particles(props: IParticlesProps): JSX.Element {
+const Particles: FC<IParticlesProps> = (props) => {
     const id = props.id ?? "tsparticles";
-    const [ container, setContainer ] = React.useState<Container | undefined>(
-        undefined
-    );
 
     useEffect(() => {
+        let container: Container | undefined;
+
         tsParticles
             .load({ id, url: props.url, options: props.options })
             .then((c) => {
-                setContainer(c);
+                container = c;
 
                 props.particlesLoaded?.(c);
             });
@@ -20,7 +19,7 @@ function Particles(props: IParticlesProps): JSX.Element {
         return () => {
             container?.destroy();
         };
-    }, [ id, container, props, props.url, props.options ]);
+    }, [ id, props, props.url, props.options ]);
 
     return <div id={id} className={props.className}></div>;
 }
