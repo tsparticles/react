@@ -184,7 +184,7 @@ importers:
         specifier: ^3.0.2
         version: 3.0.2
       '@tsparticles/react':
-        specifier: ^3.0.0-beta.1
+        specifier: ^3.0.0
         version: link:../../components/react
       tslib:
         specifier: ^2.6.2
@@ -212,7 +212,7 @@ importers:
         specifier: ^3.0.2
         version: 3.0.2
       '@tsparticles/react':
-        specifier: ^3.0.0-beta.1
+        specifier: ^3.0.0
         version: link:../../components/react
       '@types/jest':
         specifier: ^29.5.10
