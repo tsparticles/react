@@ -209,7 +209,7 @@ const App = () => {
         });
     }, []);
 
-    const particlesLoaded = async (container: Container): Promise<void> => {
+    const particlesLoaded = async (container?: Container): Promise<void> => {
         console.log(container);
     };
 
@@ -375,7 +375,7 @@ const App = () => {
         });
     }, []);
 
-    const particlesLoaded = (container: Container) => {
+    const particlesLoaded = (container?: Container) => {
         console.log(container);
     };
 
