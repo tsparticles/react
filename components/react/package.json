@@ -17,6 +17,7 @@
   "files": [
     "dist"
   ],
+  "license": "MIT",
   "peerDependencies": {
     "@tsparticles/engine": "^3.0.2",
     "react": ">=16.8.0",
@@ -42,6 +43,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "license": "MIT"
+  }
 }
