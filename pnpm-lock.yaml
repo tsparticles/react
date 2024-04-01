@@ -128,7 +128,7 @@ importers:
         version: 3.0.2
       web-vitals:
         specifier: ^3.5.0
-        version: 3.5.0
+        version: 3.5.2
 
   components/react:
     devDependencies:
@@ -240,7 +240,7 @@ importers:
         version: 5.3.3
       web-vitals:
         specifier: ^3.5.0
-        version: 3.5.0
+        version: 3.5.2
     devDependencies:
       fs-extra:
         specifier: ^11.2.0
@@ -16594,8 +16594,8 @@ packages:
       defaults: 1.0.4
     dev: false
 
-  /web-vitals@3.5.0:
-    resolution: {integrity: sha512-f5YnCHVG9Y6uLCePD4tY8bO/Ge15NPEQWtvm3tPzDKygloiqtb4SVqRHBcrIAqo2ztqX5XueqDn97zHF0LdT6w==}
+  /web-vitals@3.5.2:
+    resolution: {integrity: sha512-c0rhqNcHXRkY/ogGDJQxZ9Im9D19hDihbzSQJrsioex+KnFgmMzBiy57Z1EjkhX/+OjyBpclDCzz2ITtjokFmg==}
     dev: false
 
   /webidl-conversions@3.0.1:
