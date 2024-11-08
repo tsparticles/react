@@ -13,25 +13,25 @@ Official [tsParticles](https://github.com/tsparticles/tsparticles) ReactJS compo
 ## Installation
 
 ```shell
-npm install @tsparticles/react
+npm install tsparticles @tsparticles/react
 ```
 
 or
 
 ```shell
-yarn add @tsparticles/react
+yarn add tsparticles @tsparticles/react
 ```
 
 ### TypeScript Installation
 
 ```shell
-npm install @tsparticles/react @tsparticles/engine
+npm install tsparticles @tsparticles/react @tsparticles/engine
 ```
 
 or
 
 ```shell
-yarn add @tsparticles/react @tsparticles/engine
+yarn add tsparticles @tsparticles/react @tsparticles/engine
 ```
 
 [@tsparticles/engine](https://npmjs.com/package/@tsparticles/engine) is the core package for [tsParticles](https://particles.js.org), it contains useful types like `ISourceOptions`, `Engine` or `Container`.
