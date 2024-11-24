@@ -68,7 +68,7 @@ importers:
         version: 14.0.3(next@14.0.3(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@tsparticles/configs':
         specifier: ^3.0.2
-        version: 3.0.2
+        version: 3.6.0
       '@tsparticles/engine':
         specifier: ^3.0.2
         version: 3.0.2
@@ -2326,11 +2326,14 @@ packages:
   '@tsparticles/basic@3.0.2':
     resolution: {integrity: sha512-aM3X4daYRFxrkZ7+puHYjlgWjFaU4ROe8XOx7K+BnADfd0WM1I+JC0kspMEOe0b0qoiCbbbRpBqD135Kc75FXg==}
 
-  '@tsparticles/configs@3.0.2':
-    resolution: {integrity: sha512-GEz3vv4DV19Nz0a1pFbDjMD+/IZwP9AGDSNVL+hb7r8UtTPvl0M6v8RXcRH8HwaYonIFkorI9h/QGdagLj5RaA==}
+  '@tsparticles/configs@3.6.0':
+    resolution: {integrity: sha512-pIin/qdDTHfZFQOxWTkZ8awbKRGB7zgI6T/VvURU3G2bqtiA6f42NXehePrJV5TfmqVI/OloQGFnfRrde36Spw==}
 
   '@tsparticles/engine@3.0.2':
     resolution: {integrity: sha512-2HhuJuHjz/GiIP0i+jpymnZEXfR82sTkp7jb/sQYfiHCu5Bh0XcNNuvZXbRMgt2qdB+BAupFA7ghIB1FfnLyug==}
+
+  '@tsparticles/engine@3.6.0':
+    resolution: {integrity: sha512-iDBD0ZTTtoI5WwZkcjAgMVP2oCK2GkNgO7/Eipsfb8ZWKxtD/niGI14ynVQ31sBzp/weARwTxc4BTpbMeQHCGg==}
 
   '@tsparticles/interaction-external-attract@3.0.2':
     resolution: {integrity: sha512-7hrTPDKeDw0f6RbWs5m8eH4Dn+AIwn6d6w32GVbHEc2UQSMAX3G4rZ2ME6LEy8rlpnApIUNTBWFvK+laINtopg==}
@@ -11763,11 +11766,13 @@ snapshots:
       '@tsparticles/updater-out-modes': 3.0.2
       '@tsparticles/updater-size': 3.0.2
 
-  '@tsparticles/configs@3.0.2':
+  '@tsparticles/configs@3.6.0':
     dependencies:
-      '@tsparticles/engine': 3.0.2
+      '@tsparticles/engine': 3.6.0
 
   '@tsparticles/engine@3.0.2': {}
+
+  '@tsparticles/engine@3.6.0': {}
 
   '@tsparticles/interaction-external-attract@3.0.2':
     dependencies:
