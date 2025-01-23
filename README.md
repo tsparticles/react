@@ -398,6 +398,17 @@ const App = () => {
 };
 ```
 
+### Styles
+
+Add these styles to your global stylesheet.
+
+```CSS
+#tsparticles {
+  z-index: -10;
+  position: relative;
+}
+```
+
 ### Props
 
 | Prop      | Type   | Definition                                           |
