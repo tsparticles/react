@@ -380,7 +380,7 @@ const App = () => {
     });
   }, []);
 
-  const particlesLoaded = (container?: Container) => {
+  const particlesLoaded = async (container?: Container) => {
     console.log(container);
   };
 
