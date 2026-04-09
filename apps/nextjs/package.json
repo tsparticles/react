@@ -16,10 +16,10 @@
     "next": "^14.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tsparticles": "^4.0.0-beta.11",
-    "typescript": "^5.3.3"
+    "tsparticles": "^4.0.0-beta.11"
   },
   "devDependencies": {
+    "typescript": "^5.3.3",
     "eslint": "^8.55.0",
     "eslint-config-next": "^14.0.3"
   }

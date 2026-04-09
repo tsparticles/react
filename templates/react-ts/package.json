@@ -97,11 +97,11 @@
     "@types/react-dom": "^18.2.17",
     "tslib": "^2.6.2",
     "tsparticles": "^4.0.0-beta.11",
-    "typescript": "^5.3.3",
     "web-vitals": "^3.5.0"
   },
   "devDependencies": {
-    "fs-extra": "^11.2.0"
+    "fs-extra": "^11.2.0",
+    "typescript": "^5.3.3"
   },
   "scripts": {
     "build": "node scripts/prebuild.js",
