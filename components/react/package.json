@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/react",
-  "version": "3.0.0",
+  "version": "4.0.0-beta.0",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -18,14 +18,14 @@
     "dist"
   ],
   "peerDependencies": {
-    "@tsparticles/engine": "^3.2.2",
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
+    "@tsparticles/engine": "^4.0.0-beta.11",
+    "react": ">=16.8.0 <20",
+    "react-dom": ">=16.8.0 <20"
   },
   "devDependencies": {
-    "@tsparticles/engine": "^3.2.2",
-    "@types/react": "^18.2.45",
-    "@types/react-dom": "^18.2.18",
+    "@tsparticles/engine": "^4.0.0-beta.11",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "^6.15.0",
     "@typescript-eslint/parser": "^6.15.0",
     "@vitejs/plugin-react": "^4.2.1",
@@ -33,8 +33,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "glob": "^10.3.10",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "typescript": "^5.3.3",
     "vite": "^5.0.10",
     "vite-plugin-dts": "^3.6.4",

@@ -1,31 +1,63 @@
-import { FC, useEffect } from "react";
-import type { IParticlesProps } from "./IParticlesProps";
-import type { Container } from "@tsparticles/engine";
+import type { Container, Engine } from "@tsparticles/engine";
+import { FC, useEffect, useRef } from "react";
 
-const Particles: FC<IParticlesProps> = (props) => {
-  const id = props.id ?? "tsparticles";
+import type { IParticlesProps } from "./IParticlesProps";
+import { useParticlesEngine } from "./ParticlesProvider";
+
+const Particles: FC<IParticlesProps> = ({
+  id: idProp,
+  url,
+  options,
+  className,
+  style,
+  particlesInit,
+  particlesLoaded,
+}) => {
+  const id = idProp ?? "tsparticles";
+  const containerRef = useRef<Container | undefined>(undefined);
+
+  // Try to get engine from context (if provider is used)
+  let contextEngine: Engine | undefined;
+  try {
+    const { engine } = useParticlesEngine();
+    contextEngine = engine;
+  } catch {
+    // Provider not used, will load engine inline
+  }
 
   useEffect(() => {
-    let container: Container | undefined;
+    let unmounted = false;
 
     void (async () => {
       const { tsParticles } = await import("@tsparticles/engine");
 
-      tsParticles
-        .load({ id, url: props.url, options: props.options })
-        .then((c) => {
-          container = c;
+      // If no context engine and particlesInit provided, initialize inline
+      if (!contextEngine && particlesInit) {
+        await particlesInit(tsParticles);
+      }
 
-          props.particlesLoaded?.(c);
-        });
+      const container = await tsParticles.load({ id, options, url });
+
+      if (unmounted) {
+        container?.destroy();
+
+        return;
+      }
+
+      containerRef.current = container;
+
+      await particlesLoaded?.(container);
     })();
 
     return () => {
-      container?.destroy();
-    };
-  }, [id, props, props.url, props.options]);
+      unmounted = true;
 
-  return <div id={id} className={props.className}></div>;
+      containerRef.current?.destroy();
+      containerRef.current = undefined;
+    };
+  }, [id, options, particlesInit, particlesLoaded, url, contextEngine]);
+
+  return <div id={id} className={className} style={style}></div>;
 };
 
 export default Particles;

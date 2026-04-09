@@ -2,6 +2,7 @@ import type { Engine } from "@tsparticles/engine";
 import Particles from "./Particles";
 
 export type { IParticlesProps } from "./IParticlesProps";
+export { ParticlesProvider, useParticlesEngine } from "./ParticlesProvider";
 
 export async function initParticlesEngine(
   cb: (engine: Engine) => Promise<void>,

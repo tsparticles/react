@@ -86,10 +86,10 @@
     }
   ],
   "dependencies": {
-    "@tsparticles/engine": "^3.0.2",
-    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/engine": "^4.0.0-beta.11",
+    "@tsparticles/react": "^4.0.0-beta.0",
     "tslib": "^2.6.2",
-    "tsparticles": "^3.0.2"
+    "tsparticles": "^4.0.0-beta.11"
   },
   "devDependencies": {
     "fs-extra": "^11.2.0"

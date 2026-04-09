@@ -1,4 +1,4 @@
-import type { Container, ISourceOptions } from "@tsparticles/engine";
+import type { Container, Engine, ISourceOptions } from "@tsparticles/engine";
 import type { CSSProperties } from "react";
 
 export interface IParticlesProps {
@@ -7,5 +7,6 @@ export interface IParticlesProps {
   url?: string;
   style?: CSSProperties;
   className?: string;
-  particlesLoaded?: (container?: Container) => Promise<void>;
+  particlesInit?: (engine: Engine) => Promise<void> | void;
+  particlesLoaded?: (container?: Container) => Promise<void> | void;
 }
