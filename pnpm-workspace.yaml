@@ -2,3 +2,10 @@ packages:
   - 'apps/*'
   - 'components/*'
   - 'templates/*'
+allowBuilds:
+  '@tsparticles/engine': true
+  core-js: true
+  core-js-pure: true
+  esbuild: true
+  nx: true
+  unrs-resolver: true
