@@ -10,17 +10,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tsparticles/configs": "^4.0.0-beta.11",
-    "@tsparticles/engine": "^4.0.0-beta.11",
+    "@tsparticles/configs": "^3.9.1",
+    "@tsparticles/engine": "^3.9.1",
     "@tsparticles/react": "workspace:^",
-    "next": "^14.0.3",
+    "next": "^15.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tsparticles": "^4.0.0-beta.11"
+    "tsparticles": "^3.9.1"
   },
   "devDependencies": {
     "typescript": "^5.3.3",
     "eslint": "^8.55.0",
-    "eslint-config-next": "^14.0.3"
+    "eslint-config-next": "^15.3.0"
   }
 }

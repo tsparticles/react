@@ -18,12 +18,12 @@
     "dist"
   ],
   "peerDependencies": {
-    "@tsparticles/engine": "^4.0.0-beta.11",
+    "@tsparticles/engine": "^3.9.1",
     "react": ">=16.8.0 <20",
     "react-dom": ">=16.8.0 <20"
   },
   "devDependencies": {
-    "@tsparticles/engine": "^4.0.0-beta.11",
+    "@tsparticles/engine": "^3.9.1",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "^6.15.0",
