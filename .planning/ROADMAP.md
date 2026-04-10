@@ -17,6 +17,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] **Phase 2: Runtime Reliability & Package Compatibility** - Make lifecycle behavior and package compatibility policy dependable and explicit.
 - [ ] **Phase 3: Documentation & Verified Integration Examples** - Ensure onboarding guidance and framework demos are accurate and runnable.
 - [ ] **Phase 4: Starter Template Alignment** - Keep JS/TS starter templates synchronized with current package/runtime expectations.
+- [ ] **Phase 5: Verification Coverage for Core API & Types** - Close audit verification gaps by producing requirement-level evidence for Phase 1 outcomes.
 
 ## Phase Details
 
@@ -80,6 +81,20 @@ Plans:
 3. User can trust template metadata and prebuild scripts to remain aligned with published package versions.
    **Plans**: 2 plans
 
+### Phase 5: Verification Coverage for Core API & Types
+
+**Goal**: Close milestone audit blockers by restoring verification evidence for all Phase 1 requirements.
+**Depends on**: Phase 1
+**Requirements**: CORE-01, CORE-02, CORE-03, CORE-04, CORE-05, TYPE-01, TYPE-02
+**Gap Closure**: Closes gaps from audit (`v1.0-v1.0-MILESTONE-AUDIT.md`) where all Phase 1 requirements are orphaned due to missing `VERIFICATION.md`.
+**Success Criteria** (what must be TRUE):
+
+1. Phase 1 has a `VERIFICATION.md` with a requirement-level table covering CORE-01..CORE-05 and TYPE-01..TYPE-02.
+2. Each requirement has explicit verification evidence mapped to implementation and prior summary artifacts.
+3. All previously orphaned requirements are no longer unsatisfied in milestone audit output.
+4. Re-running milestone audit for v1.0 reports no verification-coverage blocker for `01-core-api-type-contracts`.
+   **Plans**: 0 plans
+
 ## Progress
 
 **Execution Order:**
@@ -91,3 +106,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 2. Runtime Reliability & Package Compatibility   | 0/3            | Not started | -         |
 | 3. Documentation & Verified Integration Examples | 0/3            | Not started | -         |
 | 4. Starter Template Alignment                    | 0/2            | Not started | -         |
+| 5. Verification Coverage for Core API & Types    | 0/0            | Not started | -         |
