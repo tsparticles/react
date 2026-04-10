@@ -13,8 +13,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "@tsparticles/react": "workspace:^",
-    "@tsparticles/engine": "^4.0.0-beta.11",
-    "tsparticles": "^4.0.0-beta.11"
+    "@tsparticles/engine": "^3.9.1",
+    "tsparticles": "^3.9.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
