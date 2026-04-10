@@ -34,6 +34,12 @@ Decimal phases appear between their surrounding integers in numeric order.
 5. User can pass common render props (`id`, `width`, `height`, `style`, `className`) without breaking rendering.
    **Plans**: 3 plans
 
+Plans:
+
+- [ ] 01-01-PLAN.md — Stabilize and strengthen exported TypeScript contracts for props/callbacks and init helper typing.
+- [ ] 01-02-PLAN.md — Preserve dual runtime config paths and render prop passthrough behavior in `Particles` lifecycle.
+- [ ] 01-03-PLAN.md — Align package/app/template dependency contracts to Phase 1 compatibility policy and validate with monorepo smoke builds.
+
 ### Phase 2: Runtime Reliability & Package Compatibility
 
 **Goal**: Users can rely on predictable lifecycle cleanup and clear compatibility expectations across supported environments.
