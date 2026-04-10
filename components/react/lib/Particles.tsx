@@ -1,10 +1,10 @@
 import type { Container, Engine } from "@tsparticles/engine";
-import { FC, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 import type { IParticlesProps } from "./IParticlesProps";
 import { useParticlesEngine } from "./ParticlesProvider";
 
-const Particles: FC<IParticlesProps> = ({
+const Particles = ({
   id: idProp,
   url,
   options,
@@ -12,7 +12,7 @@ const Particles: FC<IParticlesProps> = ({
   style,
   particlesInit,
   particlesLoaded,
-}) => {
+}: IParticlesProps) => {
   const id = idProp ?? "tsparticles";
   const containerRef = useRef<Container | undefined>(undefined);
 
@@ -29,24 +29,29 @@ const Particles: FC<IParticlesProps> = ({
     let unmounted = false;
 
     void (async () => {
-      const { tsParticles } = await import("@tsparticles/engine");
+      try {
+        const { tsParticles } = await import("@tsparticles/engine");
+        const engine = contextEngine ?? tsParticles;
 
-      // If no context engine and particlesInit provided, initialize inline
-      if (!contextEngine && particlesInit) {
-        await particlesInit(tsParticles);
+        // If no context engine and particlesInit provided, initialize inline
+        if (!contextEngine && particlesInit) {
+          await particlesInit(engine);
+        }
+
+        const container = await tsParticles.load({ id, options, url });
+
+        if (unmounted) {
+          container?.destroy();
+
+          return;
+        }
+
+        containerRef.current = container;
+
+        await particlesLoaded?.(container);
+      } catch (error) {
+        console.error("Failed to load particles instance:", error);
       }
-
-      const container = await tsParticles.load({ id, options, url });
-
-      if (unmounted) {
-        container?.destroy();
-
-        return;
-      }
-
-      containerRef.current = container;
-
-      await particlesLoaded?.(container);
     })();
 
     return () => {
