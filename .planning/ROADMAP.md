@@ -93,7 +93,11 @@ Plans:
 2. Each requirement has explicit verification evidence mapped to implementation and prior summary artifacts.
 3. All previously orphaned requirements are no longer unsatisfied in milestone audit output.
 4. Re-running milestone audit for v1.0 reports no verification-coverage blocker for `01-core-api-type-contracts`.
-   **Plans**: 0 plans
+   **Plans**: 1 plans
+
+Plans:
+
+- [ ] 05-01-PLAN.md — Restore Phase 1 verification evidence coverage and refresh milestone audit outputs for CORE/TYPE requirements.
 
 ## Progress
 
@@ -106,4 +110,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 2. Runtime Reliability & Package Compatibility   | 0/3            | Not started | -         |
 | 3. Documentation & Verified Integration Examples | 0/3            | Not started | -         |
 | 4. Starter Template Alignment                    | 0/2            | Not started | -         |
-| 5. Verification Coverage for Core API & Types    | 0/0            | Not started | -         |
+| 5. Verification Coverage for Core API & Types    | 0/1            | Not started | -         |
