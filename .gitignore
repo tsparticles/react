@@ -370,3 +370,4 @@ size-plugin.json
 size-plugin-ssr.json
 
 .parcel-cache
+.nx/
