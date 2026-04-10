@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadBigCirclesPreset } from "@tsparticles/preset-big-circles";
+import configs from "@tsparticles/configs";
+import { loadFull } from "tsparticles";
 import styles from "../styles/Home.module.css";
 import { useCallback, useEffect, useMemo, useState } from "react";
 
@@ -9,7 +10,7 @@ export default function Home() {
     const particlesInitCb = useCallback(async (engine) => {
         console.log("callback");
 
-        await loadBigCirclesPreset(engine);
+        await loadFull(engine);
     }, []);
 
     const particlesLoaded = useCallback((container) => {
@@ -23,16 +24,6 @@ export default function Home() {
             setInit(true);
         });
     }, []);
-
-    const options = useMemo(
-        () => ({
-            preset: "bigCircles",
-            fullScreen: {
-                zIndex: -1,
-            },
-        }),
-        []
-    );
 
     return (
         <div className={styles.container}>
@@ -98,7 +89,7 @@ export default function Home() {
             {init && (
                 <Particles
                     id="tsparticles"
-                    options={options}
+                    options={configs.basic}
                     particlesLoaded={particlesLoaded}
                 />
             )}
