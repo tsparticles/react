@@ -9,16 +9,16 @@ Requirements for this project cycle. Each maps to exactly one roadmap phase.
 
 ### Core API
 
-- [ ] **CORE-01**: User can render particles in React by mounting a stable `<Particles />` component API.
-- [ ] **CORE-02**: User can configure particles with an inline options object passed to `<Particles />`.
-- [ ] **CORE-03**: User can configure particles from a remote JSON URL passed to `<Particles />`.
-- [ ] **CORE-04**: User can initialize the engine once per app lifecycle using `initParticlesEngine` before rendering particles.
-- [ ] **CORE-05**: User can pass common render props (`id`, `width`, `height`, `style`, `className`) without breaking particle rendering.
+- [x] **CORE-01**: User can render particles in React by mounting a stable `<Particles />` component API.
+- [x] **CORE-02**: User can configure particles with an inline options object passed to `<Particles />`.
+- [x] **CORE-03**: User can configure particles from a remote JSON URL passed to `<Particles />`.
+- [x] **CORE-04**: User can initialize the engine once per app lifecycle using `initParticlesEngine` before rendering particles.
+- [x] **CORE-05**: User can pass common render props (`id`, `width`, `height`, `style`, `className`) without breaking particle rendering.
 
 ### Type Safety
 
-- [ ] **TYPE-01**: User can consume fully typed component props and callbacks when using TypeScript.
-- [ ] **TYPE-02**: User can type options with `ISourceOptions` from `@tsparticles/engine` in TypeScript examples.
+- [x] **TYPE-01**: User can consume fully typed component props and callbacks when using TypeScript.
+- [x] **TYPE-02**: User can type options with `ISourceOptions` from `@tsparticles/engine` in TypeScript examples.
 
 ### Runtime Reliability
 
@@ -78,13 +78,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase   | Status  |
 | ----------- | ------- | ------- |
-| CORE-01     | Phase 5 | Pending |
-| CORE-02     | Phase 5 | Pending |
-| CORE-03     | Phase 5 | Pending |
-| CORE-04     | Phase 5 | Pending |
-| CORE-05     | Phase 5 | Pending |
-| TYPE-01     | Phase 5 | Pending |
-| TYPE-02     | Phase 5 | Pending |
+| CORE-01     | Phase 5 | Complete |
+| CORE-02     | Phase 5 | Complete |
+| CORE-03     | Phase 5 | Complete |
+| CORE-04     | Phase 5 | Complete |
+| CORE-05     | Phase 5 | Complete |
+| TYPE-01     | Phase 5 | Complete |
+| TYPE-02     | Phase 5 | Complete |
 | RUNT-01     | Phase 2 | Pending |
 | RUNT-02     | Phase 2 | Pending |
 | RUNT-03     | Phase 2 | Pending |

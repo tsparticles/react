@@ -17,7 +17,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] **Phase 2: Runtime Reliability & Package Compatibility** - Make lifecycle behavior and package compatibility policy dependable and explicit.
 - [ ] **Phase 3: Documentation & Verified Integration Examples** - Ensure onboarding guidance and framework demos are accurate and runnable.
 - [ ] **Phase 4: Starter Template Alignment** - Keep JS/TS starter templates synchronized with current package/runtime expectations.
-- [ ] **Phase 5: Verification Coverage for Core API & Types** - Close audit verification gaps by producing requirement-level evidence for Phase 1 outcomes.
+- [x] **Phase 5: Verification Coverage for Core API & Types** - Close audit verification gaps by producing requirement-level evidence for Phase 1 outcomes. (completed 2026-04-10)
 
 ## Phase Details
 
@@ -97,7 +97,7 @@ Plans:
 
 Plans:
 
-- [ ] 05-01-PLAN.md — Restore Phase 1 verification evidence coverage and refresh milestone audit outputs for CORE/TYPE requirements.
+- [x] 05-01-PLAN.md — Restore Phase 1 verification evidence coverage and refresh milestone audit outputs for CORE/TYPE requirements.
 
 ## Progress
 
@@ -110,4 +110,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 2. Runtime Reliability & Package Compatibility   | 0/3            | Not started | -         |
 | 3. Documentation & Verified Integration Examples | 0/3            | Not started | -         |
 | 4. Starter Template Alignment                    | 0/2            | Not started | -         |
-| 5. Verification Coverage for Core API & Types    | 0/1            | Not started | -         |
+| 5. Verification Coverage for Core API & Types    | 1/1 | Complete    | 2026-04-10 |

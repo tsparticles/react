@@ -17,6 +17,7 @@ React developers can add and control tsParticles reliably with minimal setup whi
 - ✓ Provide TypeScript-compatible integration with engine types and props contracts (`components/react/lib/IParticlesProps.ts`) — existing
 - ✓ Maintain working integration examples across CRA, Vite, Next.js Pages Router, and Next.js App Router (`apps/react`, `apps/react-vite`, `apps/nextjs`, `apps/nextjs-beta`) — existing
 - ✓ Provide CRA starter templates for JavaScript and TypeScript adoption paths (`templates/react`, `templates/react-ts`) — existing
+- ✓ Restore requirement-level verification traceability for Phase 1 CORE/TYPE outcomes (`.planning/phases/01-core-api-type-contracts/01-VERIFICATION.md`, `.planning/v1.0-v1.0-MILESTONE-AUDIT.md`) — validated in Phase 5
 
 ### Active
 
@@ -50,4 +51,4 @@ This is a brownfield monorepo with an existing codebase map in `.planning/codeba
 
 ---
 
-_Last updated: 2026-04-10 after initialization_
+_Last updated: 2026-04-10 after Phase 5 completion_
