@@ -18,7 +18,7 @@
     "dist"
   ],
   "peerDependencies": {
-    "@tsparticles/engine": "^4.0.0-beta.11",
+    "@tsparticles/engine": "^4.0.0-beta",
     "react": ">=16.8.0 <20",
     "react-dom": ">=16.8.0 <20"
   },
