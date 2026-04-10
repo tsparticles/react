@@ -7,6 +7,8 @@ import {
   useState,
 } from "react";
 
+import type { ParticlesEngineInit } from "./IParticlesProps";
+
 interface ParticlesContextType {
   engine: Engine | undefined;
   isReady: boolean;
@@ -19,7 +21,7 @@ const ParticlesContext = createContext<ParticlesContextType | undefined>(
 
 interface ParticlesProviderProps {
   children: ReactNode;
-  particlesInit?: (engine: Engine) => Promise<void> | void;
+  particlesInit?: ParticlesEngineInit;
 }
 
 /**
