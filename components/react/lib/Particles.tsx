@@ -62,7 +62,8 @@ const Particles = ({
     };
   }, [id, options, particlesInit, particlesLoaded, url, contextEngine]);
 
-  return <div id={id} className={className} style={style}></div>;
+  // Width/height are supported through style passthrough (CSSProperties)
+  return <div id={id} className={className} style={style} />;
 };
 
 export default Particles;
