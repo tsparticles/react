@@ -76,38 +76,38 @@ Explicitly excluded for this cycle.
 
 Which phases cover which requirements. Updated during roadmap creation.
 
-| Requirement | Phase       | Status  |
-| ----------- | ----------- | ------- |
-| CORE-01     | Phase [TBD] | Pending |
-| CORE-02     | Phase [TBD] | Pending |
-| CORE-03     | Phase [TBD] | Pending |
-| CORE-04     | Phase [TBD] | Pending |
-| CORE-05     | Phase [TBD] | Pending |
-| TYPE-01     | Phase [TBD] | Pending |
-| TYPE-02     | Phase [TBD] | Pending |
-| RUNT-01     | Phase [TBD] | Pending |
-| RUNT-02     | Phase [TBD] | Pending |
-| RUNT-03     | Phase [TBD] | Pending |
-| COMP-01     | Phase [TBD] | Pending |
-| COMP-02     | Phase [TBD] | Pending |
-| COMP-03     | Phase [TBD] | Pending |
-| COMP-04     | Phase [TBD] | Pending |
-| DOCS-01     | Phase [TBD] | Pending |
-| DOCS-02     | Phase [TBD] | Pending |
-| DOCS-03     | Phase [TBD] | Pending |
-| DOCS-04     | Phase [TBD] | Pending |
-| DOCS-05     | Phase [TBD] | Pending |
-| TMPL-01     | Phase [TBD] | Pending |
-| TMPL-02     | Phase [TBD] | Pending |
-| TMPL-03     | Phase [TBD] | Pending |
+| Requirement | Phase   | Status  |
+| ----------- | ------- | ------- |
+| CORE-01     | Phase 1 | Pending |
+| CORE-02     | Phase 1 | Pending |
+| CORE-03     | Phase 1 | Pending |
+| CORE-04     | Phase 1 | Pending |
+| CORE-05     | Phase 1 | Pending |
+| TYPE-01     | Phase 1 | Pending |
+| TYPE-02     | Phase 1 | Pending |
+| RUNT-01     | Phase 2 | Pending |
+| RUNT-02     | Phase 2 | Pending |
+| RUNT-03     | Phase 2 | Pending |
+| COMP-01     | Phase 2 | Pending |
+| COMP-02     | Phase 2 | Pending |
+| COMP-03     | Phase 3 | Pending |
+| COMP-04     | Phase 3 | Pending |
+| DOCS-01     | Phase 3 | Pending |
+| DOCS-02     | Phase 3 | Pending |
+| DOCS-03     | Phase 3 | Pending |
+| DOCS-04     | Phase 3 | Pending |
+| DOCS-05     | Phase 3 | Pending |
+| TMPL-01     | Phase 4 | Pending |
+| TMPL-02     | Phase 4 | Pending |
+| TMPL-03     | Phase 4 | Pending |
 
 **Coverage:**
 
 - v1 requirements: 22 total
-- Mapped to phases: 0
-- Unmapped: 22
+- Mapped to phases: 22
+- Unmapped: 0
 
 ---
 
 _Requirements defined: 2026-04-10_
-_Last updated: 2026-04-10 after initial definition_
+_Last updated: 2026-04-10 after roadmap mapping_
